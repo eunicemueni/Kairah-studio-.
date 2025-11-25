@@ -36,10 +36,12 @@
         .blood-red {
             background: linear-gradient(135deg, #DC2626 0%, #B91C1C 100%);
             color: white;
-            padding: 10px 20px;
-            border-radius: 50px;
+            padding: 8px 16px;
+            border-radius: 25px;
             font-weight: 900;
             animation: pulse 2s infinite;
+            display: inline-block;
+            font-size: 0.875rem;
         }
         
         @keyframes pulse {
@@ -59,26 +61,26 @@
         
         .countdown-box {
             background: linear-gradient(135deg, #7C3AED 0%, #EC4899 100%);
-            padding: 15px;
+            padding: 1rem;
             border-radius: 15px;
             text-align: center;
-            margin: 20px 0;
+            margin: 1.25rem 0;
             font-weight: 900;
-            font-size: 1.5rem;
+            font-size: clamp(1.25rem, 4vw, 1.5rem);
         }
         
         .testimonial-bubble {
             background: rgba(255,255,255,0.1);
             border-radius: 20px;
-            padding: 20px;
-            margin: 15px 0;
+            padding: 1.25rem;
+            margin: 1rem 0;
             border-left: 5px solid #F59E0B;
             position: relative;
         }
         
         .testimonial-bubble::before {
             content: "“";
-            font-size: 4rem;
+            font-size: 3rem;
             position: absolute;
             left: 10px;
             top: -10px;
@@ -92,56 +94,63 @@
             border-left: 20px solid transparent;
             border-right: 20px solid transparent;
             border-top: 20px solid #F59E0B;
-            margin: 30px auto;
+            margin: 2rem auto;
         }
         
         .price-strike {
             text-decoration: line-through;
             color: #EF4444;
-            font-size: 1.2rem;
+            font-size: clamp(0.875rem, 3vw, 1.2rem);
         }
         
         .price-highlight {
             background: linear-gradient(135deg, #F59E0B 0%, #FBBF24 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            font-size: 2.5rem;
+            font-size: clamp(1.5rem, 6vw, 2.5rem);
             font-weight: 900;
+            line-height: 1.2;
         }
         
         .section-divider {
             height: 3px;
             background: linear-gradient(90deg, #F59E0B, #EC4899, #8B5CF6);
-            margin: 50px 0;
+            margin: 3rem 0;
             border-radius: 3px;
         }
         
         .btn-explode {
             background: linear-gradient(135deg, #DC2626 0%, #B91C1C 100%);
-            padding: 20px 40px;
+            padding: clamp(1rem, 3vw, 1.25rem) clamp(1.5rem, 4vw, 2.5rem);
             border-radius: 15px;
             font-weight: 900;
-            font-size: 1.5rem;
+            font-size: clamp(1rem, 3vw, 1.5rem);
             text-transform: uppercase;
             animation: pulse 2s infinite;
             display: block;
             width: 100%;
             max-width: 500px;
-            margin: 20px auto;
+            margin: 1.25rem auto;
             text-align: center;
             border: none;
             color: white;
             cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-explode:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(220, 38, 38, 0.4);
         }
         
         .proof-badge {
             background: #10B981;
             color: white;
-            padding: 5px 15px;
+            padding: 0.25rem 0.75rem;
             border-radius: 20px;
-            font-size: 0.8rem;
+            font-size: 0.75rem;
             font-weight: 700;
-            margin-left: 10px;
+            margin-left: 0.5rem;
         }
         
         .nav-gradient {
@@ -156,6 +165,7 @@
             overflow: hidden;
             border-radius: 12px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            margin: 1.5rem 0;
         }
         
         .video-container iframe {
@@ -166,73 +176,126 @@
             height: 100%;
             border: none;
         }
+        
+        /* Mobile-specific styles */
+        @media (max-width: 768px) {
+            .blood-red {
+                font-size: 0.75rem;
+                padding: 6px 12px;
+            }
+            
+            .testimonial-bubble {
+                padding: 1rem;
+                margin: 0.75rem 0;
+            }
+            
+            .testimonial-bubble::before {
+                font-size: 2.5rem;
+            }
+            
+            .countdown-box {
+                padding: 0.75rem;
+                margin: 1rem 0;
+            }
+            
+            .btn-explode {
+                padding: 1rem 1.5rem;
+                font-size: 1.1rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .blood-red {
+                font-size: 0.7rem;
+                padding: 5px 10px;
+            }
+            
+            .testimonial-bubble {
+                padding: 0.875rem;
+            }
+        }
+
+        /* Ensure text is readable on mobile */
+        .responsive-text {
+            font-size: clamp(1rem, 4vw, 1.125rem);
+        }
+        
+        .responsive-heading {
+            font-size: clamp(2rem, 8vw, 3.5rem);
+            line-height: 1.2;
+        }
+        
+        .responsive-subheading {
+            font-size: clamp(1.5rem, 6vw, 2.5rem);
+            line-height: 1.3;
+        }
     </style>
 </head>
 <body class="antialiased">
 
 <!-- HEADER -->
-<nav class="nav-gradient py-4 px-6 fixed w-full z-50">
+<nav class="nav-gradient py-3 px-4 fixed w-full z-50">
     <div class="max-w-7xl mx-auto flex justify-between items-center">
         <div class="flex items-center">
-            <div class="w-10 h-10 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center mr-3">
-                <i class="fas fa-crown text-white"></i>
+            <div class="w-8 h-8 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center mr-2">
+                <i class="fas fa-crown text-white text-sm"></i>
             </div>
-            <span class="text-xl font-black gold-text">KAIRAH STUDIO</span>
+            <span class="text-lg md:text-xl font-black gold-text">KAIRAH STUDIO</span>
         </div>
         
-        <div class="hidden md:flex space-x-8">
-            <a href="#proof" class="text-gray-300 hover:text-white transition">Proof</a>
-            <a href="#pricing" class="text-gray-300 hover:text-white transition">Pricing</a>
-            <a href="#guarantee" class="text-gray-300 hover:text-white transition">Guarantee</a>
+        <div class="hidden md:flex space-x-6">
+            <a href="#proof" class="text-gray-300 hover:text-white transition text-sm">Proof</a>
+            <a href="#pricing" class="text-gray-300 hover:text-white transition text-sm">Pricing</a>
+            <a href="#guarantee" class="text-gray-300 hover:text-white transition text-sm">Guarantee</a>
         </div>
         
-        <div class="blood-red text-sm">
-            <i class="fas fa-clock mr-2"></i><span id="countdown-header"></span>
+        <div class="blood-red text-xs md:text-sm">
+            <i class="fas fa-clock mr-1"></i><span id="countdown-header"></span>
         </div>
     </div>
 </nav>
 
 <!-- 🚨 URGENCY HEADER -->
-<div class="blood-red text-center py-3 mt-16">
-    <i class="fas fa-exclamation-triangle mr-2"></i>
-    <span class="urgency-blinking">🚨 PRE-LAUNCH WARNING: PRICE TRIPLES IN:</span> 
+<div class="blood-red text-center py-2 mt-16 mx-2 text-xs md:text-sm">
+    <i class="fas fa-exclamation-triangle mr-1 md:mr-2"></i>
+    <span class="urgency-blinking">🚨 PRE-LAUNCH: PRICE TRIPLES IN</span> 
     <span id="countdown" class="font-black"></span>
     <span class="urgency-blinking">🚨</span>
 </div>
 
 <!-- 🎯 HERO SECTION -->
-<section class="text-center py-16 px-4">
-    <h1 class="text-5xl md:text-7xl font-black mb-6">
-        <span class="gold-text">WARNING:</span><br>
-        <span class="text-white">This Page Will VANISH</span><br>
-        <span class="gold-text">In 72 Hours...</span>
-    </h1>
-    
+<section class="text-center py-12 md:py-16 px-4">
     <div class="max-w-4xl mx-auto">
-        <p class="text-2xl md:text-3xl text-gray-300 mb-8">
-            <span class="blood-red">🚨 FINAL CHANCE:</span> Get <span class="gold-text">Kairah Studio</span> at <span class="gold-text">PRE-LAUNCH STUPID PRICING</span> before it's GONE FOREVER!
+        <h1 class="responsive-heading font-black mb-4 md:mb-6">
+            <span class="gold-text">WARNING:</span><br>
+            <span class="text-white">This Page Will VANISH</span><br>
+            <span class="gold-text">In 72 Hours...</span>
+        </h1>
+        
+        <p class="responsive-subheading text-gray-300 mb-6 md:mb-8">
+            <span class="blood-red">🚨 FINAL CHANCE:</span> Get <span class="gold-text">Kairah Studio</span> at <span class="gold-text">PRE-LAUNCH PRICING</span> Before It's GONE!
         </p>
         
         <!-- COUNTDOWN TIMER -->
         <div class="countdown-box">
             <div class="text-sm">PRE-LAUNCH ENDS IN:</div>
-            <div id="countdown-timer" class="text-3xl font-black"></div>
-            <div class="text-sm">PRICE TRIPLES AFTER TIMER HITS ZERO!</div>
+            <div id="countdown-timer" class="text-2xl md:text-3xl font-black"></div>
+            <div class="text-xs md:text-sm">PRICE TRIPLES AFTER TIMER HITS ZERO!</div>
         </div>
         
-        <p class="text-xl text-gray-300 mb-8">
-            <span class="blood-red">ATTENTION:</span> If you're seeing this page, you're among the <span class="gold-text">FINAL 47 PEOPLE</span> who can grab <span class="gold-text">Kairah Studio</span> at these <span class="gold-text">RIDICULOUSLY CHEAP</span> pre-launch prices...
+        <p class="responsive-text text-gray-300 mb-6 md:mb-8 text-left md:text-center">
+            <span class="blood-red">ATTENTION:</span> You're among the <span class="gold-text">FINAL 47 PEOPLE</span> who can grab <span class="gold-text">Kairah Studio</span> at these <span class="gold-text">RIDICULOUSLY CHEAP</span> pre-launch prices...
         </p>
         
         <!-- MAIN VIDEO -->
-        <div class="max-w-4xl mx-auto mb-8">
+        <div class="max-w-4xl mx-auto mb-6 md:mb-8">
             <div class="video-container">
                 <iframe src="https://streamable.com/e/6psp7n" frameborder="0" allowfullscreen></iframe>
             </div>
         </div>
         
-        <p class="text-lg text-gray-300 mb-8 text-left">
-            <span class="gold-text font-black">What you just witnessed is IMPOSSIBLE...</span> Or at least it was until 72 hours ago. While you've been struggling with outdated video editors, paying freelancers $50 per video, or worse - getting ripped off by agencies charging $12,000 per month - we've been quietly building the solution that makes ALL of them obsolete. What you're looking at isn't just another AI video tool. This is the <span class="blood-red">$12,000/MONTH AGENCY KILLER</span> that's about to make video creation completely free for anyone smart enough to get in during this pre-launch window.
+        <p class="responsive-text text-gray-300 mb-6 md:mb-8 text-left">
+            <span class="gold-text font-black">What you just witnessed is IMPOSSIBLE...</span> While you've been struggling with outdated video editors, paying freelancers $50 per video, or worse - getting ripped off by agencies charging $12,000 per month - we've been building the solution that makes ALL of them obsolete.
         </p>
         
         <button class="btn-explode" onclick="scrollToPricing()">
@@ -241,8 +304,8 @@
             <i class="fas fa-bolt ml-2"></i>
         </button>
         
-        <p class="text-gray-400 text-sm mt-4">
-            <i class="fas fa-lock mr-2"></i>100% SECURE CHECKOUT • 30-DAY MONEY BACK GUARANTEE
+        <p class="text-gray-400 text-xs md:text-sm mt-3 md:mt-4">
+            <i class="fas fa-lock mr-1 md:mr-2"></i>100% SECURE • 30-DAY MONEY BACK GUARANTEE
         </p>
     </div>
 </section>
@@ -250,108 +313,108 @@
 <div class="arrow-down"></div>
 
 <!-- 💰 PROOF SECTION -->
-<section id="proof" class="py-16 px-4 bg-black/30">
+<section id="proof" class="py-12 md:py-16 px-4 bg-black/30">
     <div class="max-w-6xl mx-auto">
-        <h2 class="text-4xl md:text-5xl font-black text-center mb-12">
+        <h2 class="responsive-subheading font-black text-center mb-8 md:mb-12">
             <span class="gold-text">"I Made $47,000 in 30 Days</span><br>
             <span class="text-white">Using This EXACT System"</span>
         </h2>
         
         <!-- REAL TEXT PROOFS -->
-        <div class="grid md:grid-cols-2 gap-8 mb-12">
+        <div class="grid md:grid-cols-2 gap-4 md:gap-8 mb-8 md:mb-12">
             <div class="testimonial-bubble">
                 <div class="flex items-center mb-3">
-                    <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center font-black text-white mr-3">SC</div>
-                    <div>
-                        <div class="font-black gold-text">Sarah Chen</div>
-                        <div class="text-gray-400 text-sm">Former Agency Owner</div>
+                    <div class="w-10 h-10 md:w-12 md:h-12 bg-green-500 rounded-full flex items-center justify-center font-black text-white mr-3 text-sm md:text-base">SC</div>
+                    <div class="flex-1 min-w-0">
+                        <div class="font-black gold-text text-sm md:text-base truncate">Sarah Chen</div>
+                        <div class="text-gray-400 text-xs md:text-sm">Former Agency Owner</div>
                     </div>
-                    <div class="proof-badge">VERIFIED</div>
+                    <div class="proof-badge text-xs">VERIFIED</div>
                 </div>
-                <p class="text-gray-300 italic">
-                    "I was paying $12,000/month for video editors... Kairah Studio replaced my ENTIRE agency. Month 1: Saved $11,500. Month 2: Made $27,000 profit. This isn't a tool - it's a money printing machine! I fired my entire video team and now work 20 hours a week instead of 60. The quality is actually BETTER than what I was getting from my $12,000/month agency. If you're even thinking about this - just get it. This is the single best investment I've made in my business."
+                <p class="text-gray-300 italic responsive-text">
+                    "I was paying $12,000/month for video editors... Kairah Studio replaced my ENTIRE agency. Month 1: Saved $11,500. Month 2: Made $27,000 profit. This isn't a tool - it's a money printing machine!"
                 </p>
-                <div class="mt-3 p-3 bg-green-900/30 rounded-lg">
-                    <div class="text-green-400 font-black">$27,000 PROFIT IN 60 DAYS • 67% TIME REDUCTION</div>
+                <div class="mt-3 p-2 md:p-3 bg-green-900/30 rounded-lg">
+                    <div class="text-green-400 font-black text-sm md:text-base">$27,000 PROFIT IN 60 DAYS</div>
                 </div>
             </div>
             
             <div class="testimonial-bubble">
                 <div class="flex items-center mb-3">
-                    <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center font-black text-white mr-3">MJ</div>
-                    <div>
-                        <div class="font-black gold-text">Marcus Johnson</div>
-                        <div class="text-gray-400 text-sm">TikTok Creator</div>
+                    <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-500 rounded-full flex items-center justify-center font-black text-white mr-3 text-sm md:text-base">MJ</div>
+                    <div class="flex-1 min-w-0">
+                        <div class="font-black gold-text text-sm md:text-base truncate">Marcus Johnson</div>
+                        <div class="text-gray-400 text-xs md:text-sm">TikTok Creator</div>
                     </div>
-                    <div class="proof-badge">VERIFIED</div>
+                    <div class="proof-badge text-xs">VERIFIED</div>
                 </div>
-                <p class="text-gray-300 italic">
-                    "2 years grinding for 10K followers. 90 days with Kairah: 1.2 MILLION followers. Brand deals went from $0 to $15,000/month. I went viral 12 times. This software is literally cheating. The automated posting feature alone is worth 10x the price. I create 3 days worth of content in 3 minutes now. My friends think I'm some kind of genius but I'm just using Kairah Studio. If you're serious about growing on social media, this is non-negotiable. Get it before everyone else figures this out and the competition gets crazy."
+                <p class="text-gray-300 italic responsive-text">
+                    "2 years grinding for 10K followers. 90 days with Kairah: 1.2 MILLION followers. Brand deals went from $0 to $15,000/month. I went viral 12 times. This software is literally cheating."
                 </p>
-                <div class="mt-3 p-3 bg-blue-900/30 rounded-lg">
-                    <div class="text-blue-400 font-black">1.2M FOLLOWERS IN 90 DAYS • $15K/MONTH BRAND DEALS</div>
+                <div class="mt-3 p-2 md:p-3 bg-blue-900/30 rounded-lg">
+                    <div class="text-blue-400 font-black text-sm md:text-base">1.2M FOLLOWERS IN 90 DAYS</div>
                 </div>
             </div>
         </div>
 
         <!-- MORE TESTIMONIALS -->
-        <div class="grid md:grid-cols-2 gap-8 mb-12">
+        <div class="grid md:grid-cols-2 gap-4 md:gap-8 mb-8 md:mb-12">
             <div class="testimonial-bubble">
                 <div class="flex items-center mb-3">
-                    <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center font-black text-white mr-3">DR</div>
-                    <div>
-                        <div class="font-black gold-text">David Rodriguez</div>
-                        <div class="text-gray-400 text-sm">Freelance Editor</div>
+                    <div class="w-10 h-10 md:w-12 md:h-12 bg-purple-500 rounded-full flex items-center justify-center font-black text-white mr-3 text-sm md:text-base">DR</div>
+                    <div class="flex-1 min-w-0">
+                        <div class="font-black gold-text text-sm md:text-base truncate">David Rodriguez</div>
+                        <div class="text-gray-400 text-xs md:text-sm">Freelance Editor</div>
                     </div>
-                    <div class="proof-badge">VERIFIED</div>
+                    <div class="proof-badge text-xs">VERIFIED</div>
                 </div>
-                <p class="text-gray-300 italic">
-                    "$497 investment turned into $47,000 in client work first month. ROI: 9,380%. I know that sounds insane but it's true. I went from struggling freelancer to in-demand video expert overnight. Clients think I'm some video editing genius working 20 hours a day. Truth is, Kairah Studio does 95% of the work. I just click a few buttons. This is the biggest opportunity I've seen in years. If you do any kind of video work for clients, this will 10x your business overnight. The pre-launch price is literally stealing."
+                <p class="text-gray-300 italic responsive-text">
+                    "$497 investment turned into $47,000 in client work first month. ROI: 9,380%. I went from struggling freelancer to in-demand video expert overnight."
                 </p>
-                <div class="mt-3 p-3 bg-purple-900/30 rounded-lg">
-                    <div class="text-purple-400 font-black">9,380% ROI • $47K CLIENT WORK MONTH 1</div>
+                <div class="mt-3 p-2 md:p-3 bg-purple-900/30 rounded-lg">
+                    <div class="text-purple-400 font-black text-sm md:text-base">9,380% ROI • $47K CLIENT WORK</div>
                 </div>
             </div>
             
             <div class="testimonial-bubble">
                 <div class="flex items-center mb-3">
-                    <div class="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center font-black text-white mr-3">AC</div>
-                    <div>
-                        <div class="font-black gold-text">Amanda Chen</div>
-                        <div class="text-gray-400 text-sm">E-commerce Owner</div>
+                    <div class="w-10 h-10 md:w-12 md:h-12 bg-red-500 rounded-full flex items-center justify-center font-black text-white mr-3 text-sm md:text-base">AC</div>
+                    <div class="flex-1 min-w-0">
+                        <div class="font-black gold-text text-sm md:text-base truncate">Amanda Chen</div>
+                        <div class="text-gray-400 text-xs md:text-sm">E-commerce Owner</div>
                     </div>
-                    <div class="proof-badge">VERIFIED</div>
+                    <div class="proof-badge text-xs">VERIFIED</div>
                 </div>
-                <p class="text-gray-300 italic">
-                    "Product video conversions increased 327%. Generated $284,000 in additional revenue. I was spending $5,000/month on video ads that barely broke even. Now I'm spending $500 and making $15,000+ profit. Kairah Studio created videos that converted better than anything my expensive agencies ever produced. The AI somehow understands what makes people buy better than human editors do. If you sell anything online, this is the single most important tool you can own. The lifetime plan at $999 is literally the deal of the century."
+                <p class="text-gray-300 italic responsive-text">
+                    "Product video conversions increased 327%. Generated $284,000 in additional revenue. Now spending $500 and making $15,000+ profit monthly."
                 </p>
-                <div class="mt-3 p-3 bg-red-900/30 rounded-lg">
-                    <div class="text-red-400 font-black">327% CONVERSION INCREASE • $284K ADDITIONAL REVENUE</div>
+                <div class="mt-3 p-2 md:p-3 bg-red-900/30 rounded-lg">
+                    <div class="text-red-400 font-black text-sm md:text-base">327% CONVERSION INCREASE</div>
                 </div>
             </div>
         </div>
         
         <!-- MORE PROOFS -->
         <div class="text-center">
-            <div class="blood-red inline-block mb-6">REAL SCREENSHOT PROOFS:</div>
-            <div class="grid md:grid-cols-3 gap-4 mb-8">
-                <div class="bg-gray-800 p-4 rounded-lg text-center">
-                    <div class="text-3xl gold-text font-black">$47,000</div>
-                    <div class="text-gray-400">Client Work Month 1</div>
+            <div class="blood-red inline-block mb-4 md:mb-6 text-xs md:text-sm">REAL SCREENSHOT PROOFS:</div>
+            <div class="grid grid-cols-3 gap-2 md:gap-4 mb-6 md:mb-8">
+                <div class="bg-gray-800 p-3 md:p-4 rounded-lg text-center">
+                    <div class="text-xl md:text-3xl gold-text font-black">$47,000</div>
+                    <div class="text-gray-400 text-xs md:text-sm">Client Work Month 1</div>
                 </div>
-                <div class="bg-gray-800 p-4 rounded-lg text-center">
-                    <div class="text-3xl gold-text font-black">1.2M</div>
-                    <div class="text-gray-400">Followers in 90 Days</div>
+                <div class="bg-gray-800 p-3 md:p-4 rounded-lg text-center">
+                    <div class="text-xl md:text-3xl gold-text font-black">1.2M</div>
+                    <div class="text-gray-400 text-xs md:text-sm">Followers in 90 Days</div>
                 </div>
-                <div class="bg-gray-800 p-4 rounded-lg text-center">
-                    <div class="text-3xl gold-text font-black">9,380%</div>
-                    <div class="text-gray-400">ROI First Month</div>
+                <div class="bg-gray-800 p-3 md:p-4 rounded-lg text-center">
+                    <div class="text-xl md:text-3xl gold-text font-black">9,380%</div>
+                    <div class="text-gray-400 text-xs md:text-sm">ROI First Month</div>
                 </div>
             </div>
         </div>
 
         <!-- PROOF VIDEO -->
-        <div class="max-w-4xl mx-auto mb-8">
+        <div class="max-w-4xl mx-auto mb-6 md:mb-8">
             <div class="video-container">
                 <iframe src="https://streamable.com/e/h06tqk" frameborder="0" allowfullscreen></iframe>
             </div>
@@ -362,45 +425,45 @@
 <div class="arrow-down"></div>
 
 <!-- 💥 THE SECRET REVEALED -->
-<section class="py-16 px-4">
+<section class="py-12 md:py-16 px-4">
     <div class="max-w-6xl mx-auto">
-        <h2 class="text-4xl md:text-5xl font-black text-center mb-12">
+        <h2 class="responsive-subheading font-black text-center mb-8 md:mb-12">
             <span class="gold-text">The Dirty Little Secret</span><br>
             <span class="text-white">Video Agencies Don't Want You to Know</span>
         </h2>
         
-        <div class="bg-red-900/30 p-8 rounded-2xl border-2 border-red-500 mb-8">
-            <p class="text-2xl text-center font-black text-red-400">
+        <div class="bg-red-900/30 p-4 md:p-8 rounded-2xl border-2 border-red-500 mb-6 md:mb-8">
+            <p class="text-lg md:text-2xl text-center font-black text-red-400">
                 🤫 THEY'RE CHARGING YOU $12,000/MONTH FOR SOMETHING THAT NOW COSTS $19...
             </p>
         </div>
         
-        <div class="grid md:grid-cols-2 gap-8 items-center">
+        <div class="grid md:grid-cols-2 gap-6 md:gap-8 items-center">
             <div>
-                <p class="text-xl text-gray-300 mb-6">
+                <p class="responsive-text text-gray-300 mb-4 md:mb-6">
                     <span class="gold-text font-black">HERE'S THE TRUTH:</span> For years, agencies have been ripping you off. Charging $50 per video... $12,000 per month... for work that now takes 3 SECONDS with AI.
                 </p>
                 
-                <p class="text-xl text-gray-300 mb-6">
+                <p class="responsive-text text-gray-300 mb-4 md:mb-6">
                     <span class="blood-red">THEY HATE THIS SOFTWARE</span> because it exposes their entire business model as a SCAM.
                 </p>
                 
-                <p class="text-xl text-gray-300 mb-6">
+                <p class="responsive-text text-gray-300 mb-4 md:mb-6">
                     <span class="gold-text font-black">Kairah Studio</span> does everything they do - but faster, better, and for 99.8% LESS money.
                 </p>
 
-                <p class="text-xl text-gray-300 mb-6">
-                    Think about it: That $12,000/month agency is using the SAME AI technology we are. They're just charging you a massive markup because they know you don't have access to the tools directly. Well now you do. And during this pre-launch, you're getting it at prices so low it's literally criminal.
+                <p class="responsive-text text-gray-300 mb-4 md:mb-6">
+                    That $12,000/month agency is using the SAME AI technology we are. They're just charging you a massive markup because they know you don't have access to the tools directly.
                 </p>
                 
-                <div class="bg-yellow-900/30 p-6 rounded-xl border-2 border-yellow-500">
-                    <p class="text-yellow-400 font-black text-center text-xl">
+                <div class="bg-yellow-900/30 p-4 md:p-6 rounded-xl border-2 border-yellow-500">
+                    <p class="text-yellow-400 font-black text-center text-sm md:text-xl">
                         ⚠️ WARNING: This pre-launch pricing will NEVER be available again. After 72 hours, price TRIPLES.
                     </p>
                 </div>
             </div>
             
-            <div>
+            <div class="mt-6 md:mt-0">
                 <div class="video-container">
                     <iframe src="https://streamable.com/e/2z00ft" frameborder="0" allowfullscreen></iframe>
                 </div>
@@ -410,28 +473,28 @@
         <div class="section-divider"></div>
 
         <!-- HOW IT WORKS -->
-        <div class="text-center mb-12">
-            <h3 class="text-3xl font-black gold-text mb-6">How Normal People Are Making $10,000+/Month With Zero Experience</h3>
+        <div class="text-center mb-8 md:mb-12">
+            <h3 class="text-2xl md:text-3xl font-black gold-text mb-4 md:mb-6">How Normal People Are Making $10,000+/Month With Zero Experience</h3>
             
-            <div class="grid md:grid-cols-3 gap-6 mb-8">
-                <div class="bg-gray-800 p-6 rounded-xl">
-                    <div class="text-4xl gold-text font-black mb-4">1</div>
-                    <h4 class="text-xl font-black gold-text mb-3">Pick Your Niche</h4>
-                    <p class="text-gray-300">Choose from 47+ proven money-making niches. We show you exactly which ones convert best.</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-6 md:mb-8">
+                <div class="bg-gray-800 p-4 md:p-6 rounded-xl">
+                    <div class="text-3xl md:text-4xl gold-text font-black mb-3 md:mb-4">1</div>
+                    <h4 class="text-lg md:text-xl font-black gold-text mb-2 md:mb-3">Pick Your Niche</h4>
+                    <p class="text-gray-300 text-sm md:text-base">Choose from 47+ proven money-making niches. We show you exactly which ones convert best.</p>
                 </div>
-                <div class="bg-gray-800 p-6 rounded-xl">
-                    <div class="text-4xl gold-text font-black mb-4">2</div>
-                    <h4 class="text-xl font-black gold-text mb-3">Let AI Do The Work</h4>
-                    <p class="text-gray-300">Kairah Studio automatically creates, edits, and posts viral videos 24/7 on complete autopilot.</p>
+                <div class="bg-gray-800 p-4 md:p-6 rounded-xl">
+                    <div class="text-3xl md:text-4xl gold-text font-black mb-3 md:mb-4">2</div>
+                    <h4 class="text-lg md:text-xl font-black gold-text mb-2 md:mb-3">Let AI Do The Work</h4>
+                    <p class="text-gray-300 text-sm md:text-base">Kairah Studio automatically creates, edits, and posts viral videos 24/7 on complete autopilot.</p>
                 </div>
-                <div class="bg-gray-800 p-6 rounded-xl">
-                    <div class="text-4xl gold-text font-black mb-4">3</div>
-                    <h4 class="text-xl font-black gold-text mb-3">Get Paid</h4>
-                    <p class="text-gray-300">Collect ad revenue, brand deals, and client payments while you sleep. The system runs itself.</p>
+                <div class="bg-gray-800 p-4 md:p-6 rounded-xl">
+                    <div class="text-3xl md:text-4xl gold-text font-black mb-3 md:mb-4">3</div>
+                    <h4 class="text-lg md:text-xl font-black gold-text mb-2 md:mb-3">Get Paid</h4>
+                    <p class="text-gray-300 text-sm md:text-base">Collect ad revenue, brand deals, and client payments while you sleep. The system runs itself.</p>
                 </div>
             </div>
 
-            <div class="video-container max-w-2xl mx-auto mb-8">
+            <div class="video-container max-w-2xl mx-auto mb-6 md:mb-8">
                 <iframe src="https://streamable.com/e/yuafw3" frameborder="0" allowfullscreen></iframe>
             </div>
         </div>
@@ -441,33 +504,33 @@
 <div class="arrow-down"></div>
 
 <!-- 💰 PRICING - NON-CLICKABLE -->
-<section id="pricing" class="py-16 px-4 bg-black/30">
+<section id="pricing" class="py-12 md:py-16 px-4 bg-black/30">
     <div class="max-w-6xl mx-auto">
-        <h2 class="text-4xl md:text-5xl font-black text-center mb-12">
+        <h2 class="responsive-subheading font-black text-center mb-8 md:mb-12">
             <span class="gold-text">Choose Your Plan</span><br>
             <span class="text-white">Before Price TRIPLES</span>
         </h2>
         
-        <div class="blood-red text-center mb-8">
-            <i class="fas fa-exclamation-triangle mr-2"></i>
+        <div class="blood-red text-center mb-6 md:mb-8 text-sm md:text-base">
+            <i class="fas fa-exclamation-triangle mr-1 md:mr-2"></i>
             PRE-LAUNCH PRICING - 72 HOURS ONLY!
-            <i class="fas fa-exclamation-triangle ml-2"></i>
+            <i class="fas fa-exclamation-triangle ml-1 md:ml-2"></i>
         </div>
 
-        <p class="text-xl text-center text-gray-300 mb-12 max-w-4xl mx-auto">
-            Let me be crystal clear: <span class="gold-text font-black">These prices are NEVER coming back.</span> After this 72-hour pre-launch window closes, every single plan on this page TRIPLES in price. The $19 plan becomes $57. The $449 plan becomes $1,347. The $999 lifetime plan becomes $2,997. This is your ONE AND ONLY chance to get Kairah Studio at these ridiculous pre-launch prices.
+        <p class="responsive-text text-center text-gray-300 mb-8 md:mb-12 max-w-4xl mx-auto">
+            Let me be crystal clear: <span class="gold-text font-black">These prices are NEVER coming back.</span> After this 72-hour pre-launch window closes, every single plan on this page TRIPLES in price.
         </p>
         
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-4 md:gap-6 mb-8 md:mb-12">
             <!-- ENTRY PLAN -->
-            <div class="bg-gray-800 p-6 rounded-2xl border-2 border-gray-600">
-                <h3 class="text-2xl font-black gold-text mb-2">ENTRY PLAN</h3>
-                <div class="text-center mb-4">
+            <div class="bg-gray-800 p-4 md:p-6 rounded-2xl border-2 border-gray-600">
+                <h3 class="text-xl md:text-2xl font-black gold-text mb-2">ENTRY PLAN</h3>
+                <div class="text-center mb-3 md:mb-4">
                     <span class="price-strike">$57</span>
                     <div class="price-highlight">$19/month</div>
-                    <div class="text-gray-400 text-sm">PRE-LAUNCH ONLY</div>
+                    <div class="text-gray-400 text-xs md:text-sm">PRE-LAUNCH ONLY</div>
                 </div>
-                <ul class="text-sm text-gray-300 space-y-2 mb-4">
+                <ul class="text-xs md:text-sm text-gray-300 space-y-1 md:space-y-2 mb-3 md:mb-4">
                     <li>✅ 12 videos/month</li>
                     <li>✅ Viral prompt library</li>
                     <li>✅ Commercial rights</li>
@@ -476,24 +539,24 @@
                     <li>❌ Limited templates</li>
                 </ul>
                 <div class="text-center">
-                    <div class="blood-red text-sm mb-2">72 HOURS ONLY</div>
-                    <button class="bg-gray-600 text-white py-3 px-6 rounded-xl font-bold w-full cursor-not-allowed opacity-50">
+                    <div class="blood-red text-xs md:text-sm mb-2">72 HOURS ONLY</div>
+                    <button class="bg-gray-600 text-white py-2 md:py-3 px-4 md:px-6 rounded-xl font-bold w-full cursor-not-allowed opacity-50 text-sm md:text-base">
                         COMING SOON
                     </button>
-                    <p class="text-gray-400 text-xs mt-2">Price triples to $57/month after pre-launch</p>
+                    <p class="text-gray-400 text-xs mt-1 md:mt-2">Price triples to $57/month after pre-launch</p>
                 </div>
             </div>
 
             <!-- PRO PLAN -->
-            <div class="bg-gray-800 p-6 rounded-2xl border-2 border-yellow-500 transform scale-105">
-                <div class="blood-red text-center text-sm mb-2">MOST POPULAR</div>
-                <h3 class="text-2xl font-black gold-text mb-2">PRO PLAN</h3>
-                <div class="text-center mb-4">
+            <div class="bg-gray-800 p-4 md:p-6 rounded-2xl border-2 border-yellow-500 md:transform md:scale-105">
+                <div class="blood-red text-center text-xs md:text-sm mb-2">MOST POPULAR</div>
+                <h3 class="text-xl md:text-2xl font-black gold-text mb-2">PRO PLAN</h3>
+                <div class="text-center mb-3 md:mb-4">
                     <span class="price-strike">$147</span>
                     <div class="price-highlight">$49/month</div>
-                    <div class="text-gray-400 text-sm">SAVE $98/MONTH</div>
+                    <div class="text-gray-400 text-xs md:text-sm">SAVE $98/MONTH</div>
                 </div>
-                <ul class="text-sm text-gray-300 space-y-2 mb-4">
+                <ul class="text-xs md:text-sm text-gray-300 space-y-1 md:space-y-2 mb-3 md:mb-4">
                     <li>✅ 60 videos/month</li>
                     <li>✅ FULL viral library</li>
                     <li>✅ Priority AI models</li>
@@ -502,23 +565,23 @@
                     <li>✅ Commercial rights</li>
                 </ul>
                 <div class="text-center">
-                    <div class="blood-red text-sm mb-2">BEST DEAL - 72 HOURS</div>
-                    <button class="bg-gray-600 text-white py-3 px-6 rounded-xl font-bold w-full cursor-not-allowed opacity-50">
+                    <div class="blood-red text-xs md:text-sm mb-2">BEST DEAL - 72 HOURS</div>
+                    <button class="bg-gray-600 text-white py-2 md:py-3 px-4 md:px-6 rounded-xl font-bold w-full cursor-not-allowed opacity-50 text-sm md:text-base">
                         COMING SOON
                     </button>
-                    <p class="text-gray-400 text-xs mt-2">Price triples to $147/month after pre-launch</p>
+                    <p class="text-gray-400 text-xs mt-1 md:mt-2">Price triples to $147/month after pre-launch</p>
                 </div>
             </div>
 
             <!-- DIAMOND PLAN -->
-            <div class="bg-gray-800 p-6 rounded-2xl border-2 border-purple-500">
-                <h3 class="text-2xl font-black gold-text mb-2">DIAMOND PLAN</h3>
-                <div class="text-center mb-4">
+            <div class="bg-gray-800 p-4 md:p-6 rounded-2xl border-2 border-purple-500">
+                <h3 class="text-xl md:text-2xl font-black gold-text mb-2">DIAMOND PLAN</h3>
+                <div class="text-center mb-3 md:mb-4">
                     <span class="price-strike">$1,347</span>
                     <div class="price-highlight">$449</div>
-                    <div class="text-gray-400 text-sm">ONE-TIME PAYMENT</div>
+                    <div class="text-gray-400 text-xs md:text-sm">ONE-TIME PAYMENT</div>
                 </div>
-                <ul class="text-sm text-gray-300 space-y-2 mb-4">
+                <ul class="text-xs md:text-sm text-gray-300 space-y-1 md:space-y-2 mb-3 md:mb-4">
                     <li>✅ UNLIMITED videos</li>
                     <li>✅ Diamond library</li>
                     <li>✅ PRIORITY rendering</li>
@@ -527,24 +590,24 @@
                     <li>✅ Dedicated support</li>
                 </ul>
                 <div class="text-center">
-                    <div class="blood-red text-sm mb-2">72 HOURS ONLY</div>
-                    <button class="bg-gray-600 text-white py-3 px-6 rounded-xl font-bold w-full cursor-not-allowed opacity-50">
+                    <div class="blood-red text-xs md:text-sm mb-2">72 HOURS ONLY</div>
+                    <button class="bg-gray-600 text-white py-2 md:py-3 px-4 md:px-6 rounded-xl font-bold w-full cursor-not-allowed opacity-50 text-sm md:text-base">
                         COMING SOON
                     </button>
-                    <p class="text-gray-400 text-xs mt-2">Price triples to $1,347 after pre-launch</p>
+                    <p class="text-gray-400 text-xs mt-1 md:mt-2">Price triples to $1,347 after pre-launch</p>
                 </div>
             </div>
 
             <!-- LIFETIME PLAN -->
-            <div class="bg-gray-800 p-6 rounded-2xl border-2 border-green-500">
-                <div class="blood-red text-center text-sm mb-2">BEST VALUE</div>
-                <h3 class="text-2xl font-black gold-text mb-2">LIFETIME PLAN</h3>
-                <div class="text-center mb-4">
+            <div class="bg-gray-800 p-4 md:p-6 rounded-2xl border-2 border-green-500">
+                <div class="blood-red text-center text-xs md:text-sm mb-2">BEST VALUE</div>
+                <h3 class="text-xl md:text-2xl font-black gold-text mb-2">LIFETIME PLAN</h3>
+                <div class="text-center mb-3 md:mb-4">
                     <span class="price-strike">$2,997</span>
                     <div class="price-highlight">$999</div>
-                    <div class="text-gray-400 text-sm">FOREVER ACCESS</div>
+                    <div class="text-gray-400 text-xs md:text-sm">FOREVER ACCESS</div>
                 </div>
-                <ul class="text-sm text-gray-300 space-y-2 mb-4">
+                <ul class="text-xs md:text-sm text-gray-300 space-y-1 md:space-y-2 mb-3 md:mb-4">
                     <li>✅ LIFETIME updates</li>
                     <li>✅ ALL features included</li>
                     <li>✅ Resale rights</li>
@@ -553,17 +616,17 @@
                     <li>✅ Forever storage</li>
                 </ul>
                 <div class="text-center">
-                    <div class="blood-red text-sm mb-2">FINAL 47 SPOTS</div>
-                    <button class="bg-gray-600 text-white py-3 px-6 rounded-xl font-bold w-full cursor-not-allowed opacity-50">
+                    <div class="blood-red text-xs md:text-sm mb-2">FINAL 47 SPOTS</div>
+                    <button class="bg-gray-600 text-white py-2 md:py-3 px-4 md:px-6 rounded-xl font-bold w-full cursor-not-allowed opacity-50 text-sm md:text-base">
                         COMING SOON
                     </button>
-                    <p class="text-gray-400 text-xs mt-2">Price triples to $2,997 after pre-launch</p>
+                    <p class="text-gray-400 text-xs mt-1 md:mt-2">Price triples to $2,997 after pre-launch</p>
                 </div>
             </div>
         </div>
         
         <div class="text-center">
-            <div class="blood-red mb-4">🚨 PRICE TRIPLES AFTER COUNTDOWN HITS ZERO! 🚨</div>
+            <div class="blood-red mb-3 md:mb-4 text-sm md:text-base">🚨 PRICE TRIPLES AFTER COUNTDOWN HITS ZERO! 🚨</div>
             <button class="btn-explode" onclick="alert('Pre-launch pricing active for 72 hours only!')">
                 <i class="fas fa-fire mr-2"></i>
                 GET PRE-LAUNCH PRICING NOW!
@@ -574,56 +637,56 @@
 </section>
 
 <!-- GUARANTEE SECTION -->
-<section id="guarantee" class="py-16 px-4">
+<section id="guarantee" class="py-12 md:py-16 px-4">
     <div class="max-w-4xl mx-auto text-center">
-        <h2 class="text-4xl md:text-5xl font-black mb-8">
+        <h2 class="responsive-subheading font-black mb-6 md:mb-8">
             <span class="gold-text">Our Iron-Clad</span><br>
             <span class="text-white">"Print Money Or It's Free" Guarantee</span>
         </h2>
         
-        <div class="bg-green-900/30 p-8 rounded-2xl border-2 border-green-500 mb-8">
-            <p class="text-2xl font-black text-green-400">
+        <div class="bg-green-900/30 p-4 md:p-8 rounded-2xl border-2 border-green-500 mb-6 md:mb-8">
+            <p class="text-lg md:text-2xl font-black text-green-400">
                 🛡️ 30-DAY 100% MONEY BACK GUARANTEE
             </p>
-            <p class="text-xl text-gray-300 mt-4">
-                Here's our ridiculously simple guarantee: Use Kairah Studio for 30 days. If you don't make at least 10x your investment back, we'll refund every single penny. No questions asked. No hoops to jump through. Either this software makes you money or it's free. Period.
+            <p class="text-gray-300 mt-3 md:mt-4 responsive-text">
+                Use Kairah Studio for 30 days. If you don't make at least 10x your investment back, we'll refund every single penny. No questions asked.
             </p>
         </div>
 
-        <div class="video-container max-w-2xl mx-auto mb-8">
+        <div class="video-container max-w-2xl mx-auto mb-6 md:mb-8">
             <iframe src="https://streamable.com/e/aq7y2s" frameborder="0" allowfullscreen></iframe>
         </div>
 
-        <p class="text-xl text-gray-300 mb-8">
-            Think about that for a second. We're so confident that Kairah Studio will make you money that we're willing to give it to you for FREE if it doesn't. When was the last time you saw a guarantee that strong? Most software companies hide behind complicated refund policies. Ours is simple: <span class="gold-text font-black">MAKE MONEY OR GET YOUR MONEY BACK.</span> The risk is 100% on us.
+        <p class="responsive-text text-gray-300 mb-6 md:mb-8">
+            We're so confident that Kairah Studio will make you money that we're willing to give it to you for FREE if it doesn't. <span class="gold-text font-black">MAKE MONEY OR GET YOUR MONEY BACK.</span> The risk is 100% on us.
         </p>
     </div>
 </section>
 
 <!-- FINAL URGENCY -->
-<section class="py-16 px-4 text-center bg-black/30">
+<section class="py-12 md:py-16 px-4 text-center bg-black/30">
     <div class="max-w-4xl mx-auto">
-        <h2 class="text-4xl md:text-5xl font-black mb-8">
+        <h2 class="responsive-subheading font-black mb-6 md:mb-8">
             <span class="blood-red">FINAL WARNING</span><br>
             <span class="gold-text">This Is Your LAST CHANCE</span>
         </h2>
         
-        <div class="bg-red-900/30 p-8 rounded-2xl border-2 border-red-500 mb-8">
-            <p class="text-2xl font-black text-red-400">
+        <div class="bg-red-900/30 p-4 md:p-8 rounded-2xl border-2 border-red-500 mb-6 md:mb-8">
+            <p class="text-lg md:text-2xl font-black text-red-400">
                 ⚠️ AFTER 72 HOURS, PRICE TRIPLES AND THIS PAGE VANISHES FOREVER! ⚠️
             </p>
         </div>
 
-        <div class="video-container max-w-2xl mx-auto mb-8">
+        <div class="video-container max-w-2xl mx-auto mb-6 md:mb-8">
             <iframe src="https://streamable.com/e/zn3vrv" frameborder="0" allowfullscreen></iframe>
         </div>
         
-        <p class="text-xl text-gray-300 mb-8">
-            Don't be the person who says "I should have bought it when it was cheap." That $19 plan becomes $57... That $449 plan becomes $1,347... That $999 lifetime plan becomes $2,997... The people who get in during pre-launch will have a MASSIVE advantage over everyone else. They'll be creating better content faster, growing their channels quicker, and making more money while everyone else is stuck paying triple the price or worse - still using outdated methods that don't work anymore.
+        <p class="responsive-text text-gray-300 mb-6 md:mb-8">
+            Don't be the person who says "I should have bought it when it was cheap." That $19 plan becomes $57... That $449 plan becomes $1,347... That $999 lifetime plan becomes $2,997...
         </p>
 
-        <p class="text-2xl text-gray-300 mb-8 font-black">
-            This is your moment. This is your opportunity. This is your chance to get ahead of 99% of other creators and business owners. The choice is simple: Get in now at pre-launch pricing and join the winners, or wait and pay triple like everyone else.
+        <p class="text-lg md:text-2xl text-gray-300 mb-6 md:mb-8 font-black">
+            This is your moment. This is your opportunity. This is your chance to get ahead of 99% of other creators.
         </p>
         
         <button class="btn-explode" onclick="scrollToPricing()">
@@ -632,23 +695,23 @@
             <i class="fas fa-skull-crossbones ml-2"></i>
         </button>
 
-        <div class="countdown-box mt-8">
+        <div class="countdown-box mt-6 md:mt-8">
             <div class="text-sm">PRE-LAUNCH ENDS IN:</div>
-            <div id="final-countdown" class="text-3xl font-black"></div>
-            <div class="text-sm">DON'T SAY WE DIDN'T WARN YOU!</div>
+            <div id="final-countdown" class="text-2xl md:text-3xl font-black"></div>
+            <div class="text-xs md:text-sm">DON'T SAY WE DIDN'T WARN YOU!</div>
         </div>
     </div>
 </section>
 
-<footer class="py-8 px-4 text-center bg-black/60">
+<footer class="py-6 md:py-8 px-4 text-center bg-black/60">
     <div class="max-w-4xl mx-auto">
-        <div class="flex items-center justify-center mb-4">
-            <div class="w-8 h-8 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center mr-2">
-                <i class="fas fa-crown text-white text-sm"></i>
+        <div class="flex items-center justify-center mb-3 md:mb-4">
+            <div class="w-6 h-6 md:w-8 md:h-8 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center mr-2">
+                <i class="fas fa-crown text-white text-xs md:text-sm"></i>
             </div>
-            <span class="text-lg font-black gold-text">KAIRAH STUDIO</span>
+            <span class="text-base md:text-lg font-black gold-text">KAIRAH STUDIO</span>
         </div>
-        <p class="text-gray-400 text-sm">© 2023 Kairah Studio. All rights reserved. | Pre-Launch Offer | Prices triple after 72 hours</p>
+        <p class="text-gray-400 text-xs md:text-sm">© 2023 Kairah Studio. All rights reserved. | Pre-Launch Offer | Prices triple after 72 hours</p>
     </div>
 </footer>
 
@@ -685,6 +748,12 @@
     
     function scrollToPricing() {
         document.getElementById('pricing').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Mobile menu toggle (if needed later)
+    function toggleMobileMenu() {
+        const menu = document.getElementById('mobile-menu');
+        menu.classList.toggle('hidden');
     }
 </script>
 
