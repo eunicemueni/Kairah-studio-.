@@ -3,21 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kairah Studio - The AI Video Co-Pilot That Makes Hollywood Obsolete</title>
+    <title>Kairah Studio - The AI Video Co-Pilot That Makes Veo 3 Obsolete</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
     <style>
         body { 
             font-family: 'Poppins', sans-serif;
             background: linear-gradient(135deg, #0c0a15 0%, #1a1424 50%, #2d1b3b 100%);
-            cursor: default;
         }
         .gold-gradient { background: linear-gradient(135deg, #D4AF37 0%, #FFD700 50%, #FFEC8B 100%); }
         .gold-text { 
             background: linear-gradient(135deg, #D4AF37 0%, #FFD700 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            background-clip: text;
         }
         .blood-red { background: linear-gradient(135deg, #dc2626 0%, #7f1d1d 100%); }
         .pulse-red { animation: pulse-red 2s infinite; }
@@ -26,383 +24,355 @@
             70% { transform: scale(1.02); box-shadow: 0 0 0 15px rgba(220, 38, 38, 0); }
             100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(220, 38, 38, 0); }
         }
-        .sticky-cta {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            z-index: 1000;
-            transform: translateY(100%);
-            transition: transform 0.3s ease-in-out;
-        }
-        .sticky-cta.visible {
-            transform: translateY(0);
-        }
     </style>
 </head>
-<body class="text-white overflow-x-hidden">
-    <!-- URGENCY BARRAGE -->
-    <div class="blood-red py-4 text-center">
-        <div class="flex justify-center items-center space-x-6 flex-wrap">
-            <span class="font-black text-lg">🚀 NUCLEAR LAUNCH:</span>
-            <span id="countdown-timer" class="font-black text-xl bg-black px-4 py-2 rounded border-2 border-yellow-400">71:59:59</span>
-            <span class="font-black">ONLY <span id="spots-counter" class="bg-white text-red-600 px-3 py-1 rounded font-black">47</span> FOUNDER SPOTS LEFT</span>
-            <span class="bg-yellow-400 text-black px-3 py-1 rounded font-black animate-pulse">PRICES 5X IN 72 HOURS</span>
+<body class="text-white">
+
+<!-- 1. URGENCY HEADER -->
+<div class="blood-red py-3 text-center">
+    <div class="flex justify-center items-center space-x-4 flex-wrap">
+        <span class="font-black">🚀 72-HOUR LAUNCH:</span>
+        <span id="countdown" class="font-black bg-black px-3 py-1 rounded">71:59:59</span>
+        <span class="font-black">ONLY <span id="spots" class="bg-white text-red-600 px-2 rounded">47</span> SPOTS LEFT</span>
+        <span class="bg-yellow-400 text-black px-2 rounded font-black">PRICES 5X SOON</span>
+    </div>
+</div>
+
+<!-- 2. HERO SECTION -->
+<section class="py-20 text-center px-4">
+    <h1 class="text-6xl md:text-8xl font-black mb-6">
+        <span class="gold-text">Kairah Studio</span>
+    </h1>
+    <p class="text-3xl md:text-4xl mb-8 font-bold">
+        The AI Video Co-Pilot That Just Made<br>
+        <span class="text-red-400">Veo 3 Completely Obsolete</span>
+    </p>
+    
+    <div class="max-w-4xl mx-auto mb-8">
+        <div style="padding:56.25% 0 0 0;position:relative; border-radius: 15px; overflow: hidden;">
+            <iframe src="https://streamable.com/e/6psp7n" frameborder="0" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
         </div>
     </div>
 
-    <!-- HERO SECTION -->
-    <section class="relative py-20 px-4 text-center">
-        <div class="max-w-7xl mx-auto">
-            <h1 class="text-6xl md:text-8xl font-black mb-6">
-                <span class="gold-text">Kairah Studio</span>
-            </h1>
-            <p class="text-4xl md:text-5xl font-black mb-8">
-                The AI Video Co-Pilot That Just Made<br>
-                <span class="text-red-400">Veo 3 Completely Obsolete</span>
-            </p>
+    <button class="blood-red text-white text-2xl font-black py-4 px-12 rounded-xl pulse-red border-2 border-yellow-400">
+        🚀 GET LIFETIME ACCESS 90% OFF
+    </button>
+    <p class="mt-4 text-yellow-400 font-black">72-Hour Launch - Prices Increase 500% After Timer Hits Zero</p>
+</section>
 
-            <div class="bg-black/40 p-8 rounded-2xl border-2 border-yellow-400 max-w-4xl mx-auto mb-8">
-                <p class="text-2xl font-black gold-text mb-4">🚨 ATTENTION: This Page Will Self-Destruct In</p>
-                <div id="main-countdown" class="text-5xl font-black blood-red py-4 rounded-xl border-4 border-yellow-400">71:59:59</div>
-                <p class="text-xl mt-4">After 72 hours, lifetime access disappears forever and prices increase by 500%</p>
+<!-- 3. THE PROBLEM -->
+<section class="py-20 px-4 bg-black/40">
+    <div class="max-w-6xl mx-auto">
+        <h2 class="text-5xl font-black text-center mb-16 gold-text">The Painful Reality of "AI Video Tools"</h2>
+        
+        <div class="grid md:grid-cols-2 gap-12">
+            <div class="blood-red p-8 rounded-2xl">
+                <h3 class="text-2xl font-black mb-6 text-yellow-400">❌ What You're Suffering With Now</h3>
+                <ul class="space-y-4 text-lg">
+                    <li class="flex items-center"><span class="text-2xl mr-3">💀</span> Veo 3 gives you basic clips with zero story flow</li>
+                    <li class="flex items-center"><span class="text-2xl mr-3">💀</span> 10+ different tools for one video</li>
+                    <li class="flex items-center"><span class="text-2xl mr-3">💀</span> Generic, emotionless content that doesn't convert</li>
+                    <li class="flex items-center"><span class="text-2xl mr-3">💀</span> Still need video editing skills</li>
+                    <li class="flex items-center"><span class="text-2xl mr-3">💀</span> No brand consistency across videos</li>
+                    <li class="flex items-center"><span class="text-2xl mr-3">💀</span> Wasting hours on simple videos</li>
+                </ul>
             </div>
 
-            <button onclick="scrollToPricing()" 
-                    class="blood-red text-white text-3xl font-black py-6 px-16 rounded-2xl hover:scale-105 transition-transform transform pulse-red shadow-2xl border-4 border-yellow-400 mb-6">
-                💰 GET LIFETIME ACCESS 90% OFF NOW 💰
-            </button>
-
-            <p class="text-xl text-yellow-400 font-black">
-                ⚡ Join 2,847+ Smart Creators • ⏳ 72-Hour Nuclear Launch • 🚀 Only <span id="hero-spots">47</span> Spots Left
-            </p>
-        </div>
-    </section>
-
-    <!-- THE PROBLEM -->
-    <section class="py-20 px-4 bg-black/40">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="text-5xl md:text-7xl font-black text-center mb-16">
-                <span class="gold-text">The $287 Billion Problem</span><br>
-                <span class="text-white">Nobody Is Solving</span>
-            </h2>
-
-            <div class="grid md:grid-cols-2 gap-12">
-                <div class="blood-red p-8 rounded-2xl border-4 border-red-500">
-                    <h3 class="text-3xl font-black mb-6 text-yellow-400">💀 THE OBSOLETE WAY</h3>
-                    <div class="space-y-4 text-lg">
-                        <div class="flex items-center bg-black/40 p-4 rounded-xl">
-                            <span class="text-2xl mr-4">❌</span>
-                            <span><strong>Veo 3 & Runway:</strong> Basic clip generators with zero story intelligence</span>
-                        </div>
-                        <div class="flex items-center bg-black/40 p-4 rounded-xl">
-                            <span class="text-2xl mr-4">❌</span>
-                            <span><strong>Video Editors:</strong> $5,000/month agencies that take weeks</span>
-                        </div>
-                        <div class="flex items-center bg-black/40 p-4 rounded-xl">
-                            <span class="text-2xl mr-4">❌</span>
-                            <span><strong>Content Teams:</strong> 5-person teams costing $15,000/month</span>
-                        </div>
-                        <div class="flex items-center bg-black/40 p-4 rounded-xl">
-                            <span class="text-2xl mr-4">❌</span>
-                            <span><strong>Other AI Tools:</strong> 10+ tools creating disjointed content</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bg-gradient-to-br from-green-600/20 to-blue-600/20 p-8 rounded-2xl border-4 border-green-500">
-                    <h3 class="text-3xl font-black mb-6 gold-text">🚀 THE KAIRAH SOLUTION</h3>
-                    <div class="space-y-4 text-lg">
-                        <div class="flex items-center bg-black/40 p-4 rounded-xl">
-                            <span class="text-2xl mr-4">✅</span>
-                            <span><strong>Complete Story Engine:</strong> Understands narrative and emotion</span>
-                        </div>
-                        <div class="flex items-center bg-black/40 p-4 rounded-xl">
-                            <span class="text-2xl mr-4">✅</span>
-                            <span><strong>All-In-One Platform:</strong> Video, audio, VFX synchronized perfectly</span>
-                        </div>
-                        <div class="flex items-center bg-black/40 p-4 rounded-xl">
-                            <span class="text-2xl mr-4">✅</span>
-                            <span><strong>60-Second Workflow:</strong> Idea to published video in under 60 seconds</span>
-                        </div>
-                        <div class="flex items-center bg-black/40 p-4 rounded-xl">
-                            <span class="text-2xl mr-4">✅</span>
-                            <span><strong>Profit Pipeline Built-In:</strong> 47+ content types pre-engineered to convert</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- VIDEO DEMOS -->
-    <section class="py-20 px-4">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="text-5xl md:text-7xl font-black text-center mb-16">
-                <span class="gold-text">See The Nuclear Power</span><br>
-                <span class="text-white">In Action</span>
-            </h2>
-
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-                <div class="bg-gradient-to-br from-purple-600/20 to-pink-600/20 p-6 rounded-2xl border-2 border-purple-500">
-                    <div class="relative mb-4" style="padding:56.25% 0 0 0;border-radius:15px;overflow:hidden;">
-                        <iframe src="https://streamable.com/e/6psp7n" frameborder="0" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
-                    </div>
-                    <h3 class="text-xl font-black gold-text mb-2">YouTube Empire Builder</h3>
-                    <p class="text-gray-300 text-sm">Create viral YouTube videos that get 1M+ views automatically</p>
-                </div>
-
-                <div class="bg-gradient-to-br from-blue-600/20 to-green-600/20 p-6 rounded-2xl border-2 border-blue-500">
-                    <div class="relative mb-4" style="padding:56.25% 0 0 0;border-radius:15px;overflow:hidden;">
-                        <iframe src="https://streamable.com/e/2z00ft" frameborder="0" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
-                    </div>
-                    <h3 class="text-xl font-black gold-text mb-2">TikTok Money Machine</h3>
-                    <p class="text-gray-300 text-sm">Generate trending TikTok content that goes viral daily</p>
-                </div>
-
-                <div class="bg-gradient-to-br from-red-600/20 to-orange-600/20 p-6 rounded-2xl border-2 border-red-500">
-                    <div class="relative mb-4" style="padding:56.25% 0 0 0;border-radius:15px;overflow:hidden;">
-                        <iframe src="https://streamable.com/e/h06tqk" frameborder="0" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
-                    </div>
-                    <h3 class="text-xl font-black gold-text mb-2">Facebook Ad Dominator</h3>
-                    <p class="text-gray-300 text-sm">Create high-converting Facebook ads that print money</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- GUARANTEE SECTION -->
-    <section class="py-20 px-4 bg-black/60">
-        <div class="max-w-6xl mx-auto text-center">
-            <h2 class="text-5xl md:text-7xl font-black mb-12">
-                <span class="gold-text">Zero Risk</span><br>
-                <span class="text-white">Nuclear Guarantee</span>
-            </h2>
-
-            <div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-                <div class="blood-red p-10 rounded-2xl border-4 border-yellow-400">
-                    <div class="text-6xl mb-6">💎</div>
-                    <h3 class="text-3xl font-black mb-4 text-yellow-400">30-Day Money Back Guarantee</h3>
-                    <p class="text-xl">If you don't absolutely love Kairah Studio, get every penny back. No questions asked.</p>
-                </div>
-
-                <div class="blood-red p-10 rounded-2xl border-4 border-yellow-400">
-                    <div class="text-6xl mb-6">💰</div>
-                    <h3 class="text-3xl font-black mb-4 text-yellow-400">$100 Performance Bonus</h3>
-                    <p class="text-xl">If Kairah doesn't create at least one profit-ready video in 30 days, we'll PAY YOU $100.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- PRICING SECTION -->
-    <section id="pricing" class="py-20 px-4">
-        <div class="max-w-7xl mx-auto text-center">
-            <div class="blood-red inline-block px-12 py-6 rounded-2xl mb-12 border-4 border-yellow-400">
-                <h2 class="text-4xl md:text-6xl font-black">🚀 72-HOUR NUCLEAR LAUNCH</h2>
-                <p class="text-2xl font-black">LIFETIME 90% OFF - DISAPPEARS IN:</p>
-                <div id="pricing-countdown" class="text-3xl font-black mt-4">71:59:59</div>
-            </div>
-
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
-                <!-- Starter Plan -->
-                <div class="bg-gradient-to-b from-[#2a2035] to-[#1a1424] p-8 rounded-2xl border-2 border-gray-600 relative">
-                    <div class="text-center mb-6">
-                        <h3 class="text-2xl font-black gold-text mb-2">Starter</h3>
-                        <div class="space-y-2 mb-4">
-                            <div class="line-through text-gray-500 text-lg">$19/month</div>
-                            <div class="text-4xl font-black gold-text">$17</div>
-                            <div class="blood-red text-white px-3 py-1 rounded-full text-sm font-black">ONE-TIME</div>
-                        </div>
-                    </div>
-                    <ul class="space-y-3 text-left mb-8 text-sm">
-                        <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> 12 videos/month</li>
-                        <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> Text & Photo to Video</li>
-                        <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> Basic AI Voices</li>
-                        <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> Commercial Rights</li>
-                        <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> 720p Resolution</li>
-                    </ul>
-                    <button onclick="openPaymentModal('starter')" 
-                            class="w-full bg-gray-700 hover:bg-gray-600 text-white font-black py-4 rounded-xl transition">
-                        Get Started
-                    </button>
-                </div>
-
-                <!-- Professional Plan -->
-                <div class="bg-gradient-to-b from-[#2a2035] to-[#1a1424] p-8 rounded-2xl border-2 border-[#D4AF37] relative transform scale-105">
-                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                        <span class="blood-red text-white px-6 py-2 rounded-full text-sm font-black border-2 border-yellow-400">
-                            🔥 MOST POPULAR
-                        </span>
-                    </div>
-                    <div class="text-center mb-6">
-                        <h3 class="text-2xl font-black gold-text mb-2">Professional</h3>
-                        <div class="space-y-2 mb-4">
-                            <div class="line-through text-gray-500 text-lg">$49/month</div>
-                            <div class="text-4xl font-black gold-text">$47</div>
-                            <div class="blood-red text-white px-3 py-1 rounded-full text-sm font-black">ONE-TIME</div>
-                        </div>
-                    </div>
-                    <ul class="space-y-3 text-left mb-8 text-sm">
-                        <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> 60 videos/month</li>
-                        <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> All AI Models</li>
-                        <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> Viral Templates</li>
-                        <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> Priority Rendering</li>
-                        <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> 1080p Resolution</li>
-                        <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> Commercial Rights</li>
-                    </ul>
-                    <button onclick="openPaymentModal('pro')" 
-                            class="w-full gold-gradient text-black font-black py-4 rounded-xl hover:scale-105 transition pulse-red">
-                        🔥 BEST VALUE
-                    </button>
-                </div>
-
-                <!-- Diamond Plan -->
-                <div class="bg-gradient-to-b from-[#2a2035] to-[#1a1424] p-8 rounded-2xl border-2 border-purple-600 relative">
-                    <div class="text-center mb-6">
-                        <h3 class="text-2xl font-black gold-text mb-2">Diamond</h3>
-                        <div class="space-y-2 mb-4">
-                            <div class="line-through text-gray-500 text-lg">$449</div>
-                            <div class="text-4xl font-black gold-text">$297</div>
-                            <div class="blood-red text-white px-3 py-1 rounded-full text-sm font-black">ONE-TIME</div>
-                        </div>
-                    </div>
-                    <ul class="space-y-3 text-left mb-8 text-sm">
-                        <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> Unlimited Videos</li>
-                        <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> Exclusive Templates</li>
-                        <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> Priority Rendering</li>
-                        <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> Private Projects</li>
-                        <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> 4K Resolution</li>
-                        <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> Full Commercial Rights</li>
-                    </ul>
-                    <button onclick="openPaymentModal('diamond')" 
-                            class="w-full bg-purple-600 hover:bg-purple-700 text-white font-black py-4 rounded-xl transition">
-                        Go Premium
-                    </button>
-                </div>
-
-                <!-- Lifetime Plan -->
-                <div class="bg-gradient-to-b from-[#2a2035] to-[#1a1424] p-8 rounded-2xl border-2 border-yellow-400 relative">
-                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                        <span class="bg-yellow-400 text-black px-6 py-2 rounded-full text-sm font-black">
-                            ⭐ LIMITED: 50 SPOTS
-                        </span>
-                    </div>
-                    <div class="text-center mb-6">
-                        <h3 class="text-2xl font-black gold-text mb-2">Lifetime</h3>
-                        <div class="space-y-2 mb-4">
-                            <div class="line-through text-gray-500 text-lg">$999</div>
-                            <div class="text-4xl font-black gold-text">$497</div>
-                            <div class="blood-red text-white px-3 py-1 rounded-full text-sm font-black">FOREVER ACCESS</div>
-                        </div>
-                    </div>
-                    <ul class="space-y-3 text-left mb-8 text-sm">
-                        <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> Unlimited Everything</li>
-                        <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> Lifetime Updates</li>
-                        <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> All Future Products</li>
-                        <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> VIP Support</li>
-                        <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> White Label Rights</li>
-                        <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> 8K Resolution</li>
-                    </ul>
-                    <button onclick="openPaymentModal('lifetime')" 
-                            class="w-full bg-yellow-400 hover:bg-yellow-500 text-black font-black py-4 rounded-xl transition">
-                        ⭐ GET LIFETIME
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- STICKY CTA -->
-    <div class="sticky-cta" id="stickyCta">
-        <div class="blood-red border-t-4 border-yellow-400">
-            <div class="max-w-7xl mx-auto px-4 py-4">
-                <div class="flex justify-between items-center flex-wrap gap-4">
-                    <div class="flex items-center space-x-6">
-                        <span class="text-xl font-black">🚀 72-HOUR LAUNCH:</span>
-                        <span class="font-black" id="sticky-timer">71:59:59</span>
-                        <span class="font-black" id="sticky-spots">47</span>
-                    </div>
-                    <button onclick="scrollToPricing()" 
-                            class="bg-yellow-400 text-black text-xl font-black py-4 px-8 rounded-xl hover:scale-105 transition transform pulse-red">
-                        💎 GET LIFETIME ACCESS NOW 💎
-                    </button>
-                </div>
+            <div class="bg-green-600/20 p-8 rounded-2xl border-2 border-green-500">
+                <h3 class="text-2xl font-black mb-6 gold-text">✅ The Kairah Revolution</h3>
+                <ul class="space-y-4 text-lg">
+                    <li class="flex items-center"><span class="text-2xl mr-3">🚀</span> Complete stories with emotional arcs</li>
+                    <li class="flex items-center"><span class="text-2xl mr-3">🚀</span> One platform for everything</li>
+                    <li class="flex items-center"><span class="text-2xl mr-3">🚀</span> Content pre-engineered to convert</li>
+                    <li class="flex items-center"><span class="text-2xl mr-3">🚀</span> Zero editing skills needed</li>
+                    <li class="flex items-center"><span class="text-2xl mr-3">🚀</span> Automatic brand consistency</li>
+                    <li class="flex items-center"><span class="text-2xl mr-3">🚀</span> 60 seconds from idea to published video</li>
+                </ul>
             </div>
         </div>
     </div>
+</section>
 
-    <script>
-        // 72-HOUR COUNTDOWN TIMER
-        function updateTimer() {
+<!-- 4. HOW IT WORKS -->
+<section class="py-20 px-4">
+    <div class="max-w-6xl mx-auto">
+        <h2 class="text-5xl font-black text-center mb-16 gold-text">How Kairah Studio Works: Simple 3-Step Process</h2>
+        
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="text-center p-6">
+                <div class="text-6xl mb-4">1</div>
+                <h3 class="text-2xl font-black mb-4 gold-text">Describe Your Vision</h3>
+                <p class="text-gray-300">"A lone wolf howls at the moon, conveying the pain of isolation after losing its pack"</p>
+            </div>
+            <div class="text-center p-6">
+                <div class="text-6xl mb-4">2</div>
+                <h3 class="text-2xl font-black mb-4 gold-text">AI Co-Pilot Takes Over</h3>
+                <p class="text-gray-300">Analyzes emotion, suggests scenes, generates video, adds music - all synchronized</p>
+            </div>
+            <div class="text-center p-6">
+                <div class="text-6xl mb-4">3</div>
+                <h3 class="text-2xl font-black mb-4 gold-text">Publish & Profit</h3>
+                <p class="text-gray-300">Get a complete, professionally edited video ready to go viral or convert</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 5. FEATURES -->
+<section class="py-20 px-4 bg-black/40">
+    <div class="max-w-6xl mx-auto">
+        <h2 class="text-5xl font-black text-center mb-16 gold-text">Revolutionary Features That Make Competitors Sweat</h2>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-gradient-to-b from-[#2a2035] to-[#1a1424] p-6 rounded-2xl border-2 border-gray-700">
+                <h3 class="text-xl font-black mb-3 gold-text">Contextual Narrative Engine</h3>
+                <p class="text-gray-300">Understands story arcs and emotional pacing, not just basic prompts</p>
+            </div>
+            <div class="bg-gradient-to-b from-[#2a2035] to-[#1a1424] p-6 rounded-2xl border-2 border-gray-700">
+                <h3 class="text-xl font-black mb-3 gold-text">Multi-Modal Fusion Core</h3>
+                <p class="text-gray-300">Generates video, composes music, adds VFX - all synchronized automatically</p>
+            </div>
+            <div class="bg-gradient-to-b from-[#2a2035] to-[#1a1424] p-6 rounded-2xl border-2 border-gray-700">
+                <h3 class="text-xl font-black mb-3 gold-text">Brand DNA Lock</h3>
+                <p class="text-gray-300">Set your brand once - every video automatically matches your style</p>
+            </div>
+            <div class="bg-gradient-to-b from-[#2a2035] to-[#1a1424] p-6 rounded-2xl border-2 border-gray-700">
+                <h3 class="text-xl font-black mb-3 gold-text">Profit Pipeline Templates</h3>
+                <p class="text-gray-300">47+ content types pre-engineered to convert and make money</p>
+            </div>
+            <div class="bg-gradient-to-b from-[#2a2035] to-[#1a1424] p-6 rounded-2xl border-2 border-gray-700">
+                <h3 class="text-xl font-black mb-3 gold-text">AI Co-Pilot Chat</h3>
+                <p class="text-gray-300">Conversational AI that suggests improvements and optimizations</p>
+            </div>
+            <div class="bg-gradient-to-b from-[#2a2035] to-[#1a1424] p-6 rounded-2xl border-2 border-gray-700">
+                <h3 class="text-xl font-black mb-3 gold-text">60-Second Workflow</h3>
+                <p class="text-gray-300">From idea to published video in under 60 seconds</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 6. PLATFORM DOMINATION -->
+<section class="py-20 px-4">
+    <div class="max-w-6xl mx-auto">
+        <h2 class="text-5xl font-black text-center mb-16 gold-text">Dominate Every Platform Known to Man</h2>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="text-center p-6 bg-gradient-to-b from-[#2a2035] to-[#1a1424] rounded-2xl border-2 border-red-600">
+                <div class="text-4xl mb-4">📺</div>
+                <h3 class="text-lg font-black gold-text">YouTube Empire</h3>
+                <p class="text-sm text-gray-300 mt-2">Viral videos with SEO optimization</p>
+            </div>
+            <div class="text-center p-6 bg-gradient-to-b from-[#2a2035] to-[#1a1424] rounded-2xl border-2 border-pink-600">
+                <div class="text-4xl mb-4">🎵</div>
+                <h3 class="text-lg font-black gold-text">TikTok Dominance</h3>
+                <p class="text-sm text-gray-300 mt-2">Trending content that goes viral</p>
+            </div>
+            <div class="text-center p-6 bg-gradient-to-b from-[#2a2035] to-[#1a1424] rounded-2xl border-2 border-blue-600">
+                <div class="text-4xl mb-4">👥</div>
+                <h3 class="text-lg font-black gold-text">Facebook Ads</h3>
+                <p class="text-sm text-gray-300 mt-2">High-converting ad content</p>
+            </div>
+            <div class="text-center p-6 bg-gradient-to-b from-[#2a2035] to-[#1a1424] rounded-2xl border-2 border-purple-600">
+                <div class="text-4xl mb-4">📱</div>
+                <h3 class="text-lg font-black gold-text">Instagram Reels</h3>
+                <p class="text-sm text-gray-300 mt-2">Engaging short-form content</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 7. SOCIAL PROOF -->
+<section class="py-20 px-4 bg-black/40">
+    <div class="max-w-6xl mx-auto">
+        <h2 class="text-5xl font-black text-center mb-16 gold-text">3,847+ Creators Can't Be Wrong</h2>
+        
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-gradient-to-b from-[#2a2035] to-[#1a1424] p-6 rounded-2xl border-2 border-gray-700">
+                <div class="text-yellow-400 text-xl mb-4">⭐⭐⭐⭐⭐</div>
+                <p class="italic mb-4">"I replaced my $5,000/month video agency with Kairah. My content quality actually IMPROVED while saving $4,800 monthly."</p>
+                <div class="font-black gold-text">- Sarah Chen</div>
+                <div class="text-sm text-gray-400">Agency Owner</div>
+            </div>
+            <div class="bg-gradient-to-b from-[#2a2035] to-[#1a1424] p-6 rounded-2xl border-2 border-gray-700">
+                <div class="text-yellow-400 text-xl mb-4">⭐⭐⭐⭐⭐</div>
+                <p class="italic mb-4">"Went viral 3 times in 2 weeks. The templates are cheat codes. My TikTok grew from 10K to 250K followers."</p>
+                <div class="font-black gold-text">- Marcus Johnson</div>
+                <div class="text-sm text-gray-400">Content Creator</div>
+            </div>
+            <div class="bg-gradient-to-b from-[#2a2035] to-[#1a1424] p-6 rounded-2xl border-2 border-gray-700">
+                <div class="text-yellow-400 text-xl mb-4">⭐⭐⭐⭐⭐</div>
+                <p class="italic mb-4">"The ROI is ridiculous. Spent $497 lifetime, made $12,347 in client work first month. Best investment ever."</p>
+                <div class="font-black gold-text">- David Rodriguez</div>
+                <div class="text-sm text-gray-400">Freelancer</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 8. BONUSES -->
+<section class="py-20 px-4">
+    <div class="max-w-6xl mx-auto">
+        <h2 class="text-5xl font-black text-center mb-16 gold-text">$4,991 in FREE Bonuses</h2>
+        
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-gradient-to-b from-[#2a2035] to-[#1a1424] p-6 rounded-2xl border-2 border-purple-600">
+                <h3 class="text-xl font-black mb-3 gold-text">Viral Templates Pack</h3>
+                <div class="blood-red inline-block px-3 py-1 rounded text-sm font-black mb-3">$997 VALUE</div>
+                <p class="text-gray-300">47 proven viral templates for all platforms</p>
+            </div>
+            <div class="bg-gradient-to-b from-[#2a2035] to-[#1a1424] p-6 rounded-2xl border-2 border-blue-600">
+                <h3 class="text-xl font-black mb-3 gold-text">Empire Builder Community</h3>
+                <div class="blood-red inline-block px-3 py-1 rounded text-sm font-black mb-3">$1,497 VALUE</div>
+                <p class="text-gray-300">Private community of successful creators</p>
+            </div>
+            <div class="bg-gradient-to-b from-[#2a2035] to-[#1a1424] p-6 rounded-2xl border-2 border-green-600">
+                <h3 class="text-xl font-black mb-3 gold-text">AI Video Mastery Course</h3>
+                <div class="blood-red inline-block px-3 py-1 rounded text-sm font-black mb-3">$2,497 VALUE</div>
+                <p class="text-gray-300">Advanced training on scaling your empire</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 9. GUARANTEE -->
+<section class="py-20 px-4 bg-black/40">
+    <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-5xl font-black mb-12 gold-text">Zero Risk Nuclear Guarantee</h2>
+        
+        <div class="blood-red p-8 rounded-2xl border-4 border-yellow-400">
+            <h3 class="text-3xl font-black mb-6 text-yellow-400">30-Day Money Back + $100 Performance Bonus</h3>
+            <p class="text-xl mb-4">If you don't love Kairah Studio, get every penny back PLUS we'll pay you $100 if it doesn't create profit-ready videos.</p>
+            <p class="text-lg font-black">That's how confident we are this will transform your video creation.</p>
+        </div>
+    </div>
+</section>
+
+<!-- 10. PRICING -->
+<section class="py-20 px-4">
+    <div class="max-w-6xl mx-auto">
+        <h2 class="text-5xl font-black text-center mb-16 gold-text">Choose Your Founding Member Plan</h2>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="bg-gradient-to-b from-[#2a2035] to-[#1a1424] p-6 rounded-2xl border-2 border-gray-600">
+                <h3 class="text-2xl font-black mb-3 gold-text">Starter</h3>
+                <div class="text-3xl font-black mb-4 gold-text">$17</div>
+                <ul class="space-y-2 text-sm mb-6">
+                    <li>✓ 12 videos/month</li>
+                    <li>✓ Text & Photo to Video</li>
+                    <li>✓ Basic AI Voices</li>
+                    <li>✓ Commercial Rights</li>
+                </ul>
+                <button class="w-full bg-gray-700 text-white py-3 rounded font-black">Get Started</button>
+            </div>
+
+            <div class="bg-gradient-to-b from-[#2a2035] to-[#1a1424] p-6 rounded-2xl border-2 border-yellow-400 transform scale-105">
+                <div class="blood-red text-white px-3 py-1 rounded text-sm font-black mb-3 text-center">MOST POPULAR</div>
+                <h3 class="text-2xl font-black mb-3 gold-text">Professional</h3>
+                <div class="text-3xl font-black mb-4 gold-text">$47</div>
+                <ul class="space-y-2 text-sm mb-6">
+                    <li>✓ 60 videos/month</li>
+                    <li>✓ All AI Models</li>
+                    <li>✓ Viral Templates</li>
+                    <li>✓ Priority Rendering</li>
+                    <li>✓ Commercial Rights</li>
+                </ul>
+                <button class="w-full gold-gradient text-black py-3 rounded font-black pulse-red">🔥 BEST VALUE</button>
+            </div>
+
+            <div class="bg-gradient-to-b from-[#2a2035] to-[#1a1424] p-6 rounded-2xl border-2 border-purple-600">
+                <h3 class="text-2xl font-black mb-3 gold-text">Diamond</h3>
+                <div class="text-3xl font-black mb-4 gold-text">$297</div>
+                <ul class="space-y-2 text-sm mb-6">
+                    <li>✓ Unlimited Videos</li>
+                    <li>✓ Exclusive Templates</li>
+                    <li>✓ Priority Rendering</li>
+                    <li>✓ Private Projects</li>
+                    <li>✓ Full Commercial Rights</li>
+                </ul>
+                <button class="w-full bg-purple-600 text-white py-3 rounded font-black">Go Premium</button>
+            </div>
+
+            <div class="bg-gradient-to-b from-[#2a2035] to-[#1a1424] p-6 rounded-2xl border-2 border-yellow-400">
+                <div class="bg-yellow-400 text-black px-3 py-1 rounded text-sm font-black mb-3 text-center">LIMITED: 50 SPOTS</div>
+                <h3 class="text-2xl font-black mb-3 gold-text">Lifetime</h3>
+                <div class="text-3xl font-black mb-4 gold-text">$497</div>
+                <ul class="space-y-2 text-sm mb-6">
+                    <li>✓ Unlimited Everything</li>
+                    <li>✓ Lifetime Updates</li>
+                    <li>✓ All Future Products</li>
+                    <li>✓ VIP Support</li>
+                    <li>✓ White Label Rights</li>
+                </ul>
+                <button class="w-full bg-yellow-400 text-black py-3 rounded font-black">⭐ GET LIFETIME</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 11. FAQ -->
+<section class="py-20 px-4 bg-black/40">
+    <div class="max-w-4xl mx-auto">
+        <h2 class="text-5xl font-black text-center mb-16 gold-text">Frequently Asked Questions</h2>
+        
+        <div class="space-y-6">
+            <div class="bg-gradient-to-b from-[#2a2035] to-[#1a1424] p-6 rounded-2xl">
+                <h3 class="text-xl font-black mb-3 gold-text">Do I need video editing experience?</h3>
+                <p class="text-gray-300">ABSOLUTELY ZERO. Kairah Studio is designed for complete beginners. The AI handles everything.</p>
+            </div>
+            <div class="bg-gradient-to-b from-[#2a2035] to-[#1a1424] p-6 rounded-2xl">
+                <h3 class="text-xl font-black mb-3 gold-text">Can I use it on multiple platforms?</h3>
+                <p class="text-gray-300">YES! Kairah automatically optimizes for YouTube, TikTok, Instagram, Facebook, and more.</p>
+            </div>
+            <div class="bg-gradient-to-b from-[#2a2035] to-[#1a1424] p-6 rounded-2xl">
+                <h3 class="text-xl font-black mb-3 gold-text">Are updates included in lifetime access?</h3>
+                <p class="text-gray-300">YES! Lifetime means LIFETIME. All future updates and features included forever.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 12. FINAL CTA -->
+<section class="py-20 px-4 text-center">
+    <h2 class="text-5xl font-black mb-8 gold-text">Ready to Join the AI Video Revolution?</h2>
+    <p class="text-2xl mb-8">3,847+ smart creators have already made the switch. Your future self will thank you.</p>
+    
+    <div class="blood-red p-6 rounded-2xl border-4 border-yellow-400 max-w-2xl mx-auto mb-8">
+        <p class="text-xl font-black">🚨 FINAL WARNING: 72-Hour Launch ends in <span id="final-timer">71:59:59</span></p>
+        <p class="text-lg">Only <span id="final-spots">47</span> founder spots remaining</p>
+    </div>
+
+    <button class="blood-red text-white text-3xl font-black py-6 px-16 rounded-2xl pulse-red border-4 border-yellow-400">
+        💰 GET LIFETIME 90% OFF NOW 💰
+    </button>
+</section>
+
+<script>
+    // 72-hour countdown timer
+    function updateTimer() {
+        const now = new Date().getTime();
+        const launchEnd = now + (72 * 60 * 60 * 1000);
+        
+        setInterval(function() {
             const now = new Date().getTime();
-            const launchEnd = now + (72 * 60 * 60 * 1000); // 72 hours
+            const distance = launchEnd - now;
             
-            const timer = setInterval(function() {
-                const now = new Date().getTime();
-                const distance = launchEnd - now;
-                
-                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-                
-                const timerText = `${hours}h ${minutes}m ${seconds}s`;
-                
-                // Update all timer instances
-                document.querySelectorAll('[id*="timer"], [id*="countdown"]').forEach(el => {
-                    el.textContent = timerText;
-                });
-                
-                if (distance < 0) {
-                    clearInterval(timer);
-                    document.querySelectorAll('.countdown-element').forEach(el => {
-                        el.innerHTML = "🚨 LAUNCH ENDED - PRICES INCREASED 500%";
-                    });
-                }
-            }, 1000);
-        }
-
-        // Sticky CTA
-        window.addEventListener('scroll', () => {
-            const stickyCta = document.getElementById('stickyCta');
-            if (window.scrollY > 500) {
-                stickyCta.classList.add('visible');
-            } else {
-                stickyCta.classList.remove('visible');
-            }
-        });
-
-        // Smooth Scroll
-        function scrollToPricing() {
-            document.getElementById('pricing').scrollIntoView({ 
-                behavior: 'smooth',
-                block: 'start'
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            const timerText = `${hours}h ${minutes}m ${seconds}s`;
+            
+            document.querySelectorAll('[id*="timer"], [id*="countdown"]').forEach(el => {
+                el.textContent = timerText;
             });
-        }
+        }, 1000);
+    }
 
-        // Payment Modal
-        function openPaymentModal(plan) {
-            // Redirect to payment or show modal
-            alert('Opening payment for ' + plan + ' plan');
-        }
+    document.addEventListener('DOMContentLoaded', function() {
+        updateTimer();
+    });
+</script>
 
-        // Initialize
-        document.addEventListener('DOMContentLoaded', function() {
-            updateTimer();
-            
-            // Update spots dynamically
-            setInterval(() => {
-                const spots = document.querySelectorAll('[id*="spots"]');
-                spots.forEach(spot => {
-                    if (Math.random() > 0.7) {
-                        let current = parseInt(spot.textContent);
-                        if (current > 1) {
-                            spot.textContent = current - 1;
-                        }
-                    }
-                });
-            }, 45000);
-        });
-    </script>
 </body>
 </html>
