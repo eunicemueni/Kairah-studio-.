@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kairah Studio - AI Video Empire Builder</title>
+    <title>Kairah Studio - Build Your Automated Video Empire</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -23,6 +23,7 @@
             background: linear-gradient(135deg, var(--darker) 0%, var(--dark) 100%);
             color: var(--light);
             overflow-x: hidden;
+            line-height: 1.7;
         }
         
         .gold-text {
@@ -55,7 +56,7 @@
         
         .video-container {
             position: relative;
-            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            padding-bottom: 56.25%;
             height: 0;
             overflow: hidden;
             border-radius: 12px;
@@ -126,6 +127,42 @@
             height: 2px;
             background: linear-gradient(90deg, transparent 0%, var(--primary) 50%, transparent 100%);
         }
+        
+        .sales-section {
+            padding: 80px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .highlight-text {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 800;
+        }
+        
+        .testimonial-card {
+            background: rgba(30, 20, 50, 0.7);
+            border: 1px solid rgba(139, 92, 246, 0.3);
+            border-radius: 12px;
+            padding: 24px;
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(139, 92, 246, 0.3);
+        }
+        
+        .guarantee-badge {
+            background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-weight: 700;
+            display: inline-block;
+            margin-bottom: 16px;
+        }
     </style>
 </head>
 <body class="antialiased">
@@ -154,567 +191,936 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="pt-32 pb-20 px-4 hero-gradient">
-        <div class="max-w-7xl mx-auto">
+    <section class="pt-32 pb-20 px-4 hero-gradient sales-section">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="text-5xl md:text-7xl font-black mb-6">
+                <span class="gold-text">Imagine launching a viral, faceless</span><br>
+                <span class="text-white">YouTube, TikTok, or Instagram channel</span><br>
+                <span class="gold-text">in just minutes...</span>
+            </h1>
+            
+            <div class="max-w-4xl mx-auto">
+                <p class="text-2xl md:text-3xl text-gray-300 mb-8">
+                    (And Then Your new Channel automatically Creates AND posts videos FOR YOU...<br>
+                    So you NEVER HAVE TO TOUCH IT, AGAIN?)
+                </p>
+                
+                <div class="bg-gradient-to-r from-purple-600/30 to-pink-600/30 p-8 rounded-2xl border-2 border-purple-500 mb-8">
+                    <p class="text-2xl font-bold text-white">
+                        This is 100% AUTOMATED, so once you set it up, you never have to lift a finger!
+                    </p>
+                </div>
+                
+                <p class="text-xl text-gray-300 mb-8">
+                    Faceless Channels are A Modern Day Gold Rush, making tens of thousands a month for anonymous creators... and that's why they're BOOMING...
+                </p>
+                
+                <p class="text-xl text-gray-300 mb-8">
+                    And now you can use the <span class="highlight-text">TRAFFIC SUPERNOVA STRATEGY</span> to build Faceless Channels FAST & AUTOMATED (using our system) in dozens and dozens of niches…
+                </p>
+            </div>
+            
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 mb-8">
+                <button class="btn-primary px-8 py-4 rounded-xl font-bold text-lg">
+                    Yes, I Want Automated Cash Flow Systems!
+                </button>
+            </div>
+            
+            <div class="max-w-5xl mx-auto">
+                <div class="video-container pulse-glow mb-8">
+                    <div class="absolute inset-0 bg-gradient-to-br from-purple-900 to-pink-700 flex items-center justify-center rounded-xl">
+                        <div class="text-center">
+                            <i class="fas fa-play-circle text-6xl text-white opacity-80 mb-4"></i>
+                            <p class="text-white font-bold text-xl">Kairah Studio Automated Demo</p>
+                            <p class="text-gray-300 mt-2">See how we create and post videos automatically</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Problem Section -->
+    <section class="sales-section bg-black/20">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl md:text-5xl font-black text-center mb-12">
+                <span class="gold-text">But, even though some people are making tens of thousands a month</span><br>
+                <span class="text-white">with their Faceless Channels, it can be a real grind…</span>
+            </h2>
+            
             <div class="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
-                    <h1 class="text-5xl md:text-7xl font-black mb-6">
-                        <span class="gold-text">Build Your</span><br>
-                        <span class="text-white">Video Empire</span>
-                    </h1>
-                    <p class="text-xl text-gray-300 mb-8 max-w-2xl">
-                        The world's first AI video platform that understands storytelling, emotion, and brand identity. Create Hollywood-quality videos in minutes, not months.
-                    </p>
-                    
-                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mb-8">
-                        <button class="btn-primary px-8 py-4 rounded-xl font-bold text-lg flex items-center justify-center">
-                            <i class="fas fa-play-circle mr-2"></i> Watch Demo
-                        </button>
-                        <button class="btn-secondary px-8 py-4 rounded-xl font-bold text-lg">
-                            Start Free Trial
-                        </button>
+                    <div class="bg-red-600/20 p-6 rounded-2xl border-2 border-red-500 mb-6">
+                        <h3 class="text-2xl font-black text-red-400 mb-4">If you build a faceless channel THE OLD WAY —</h3>
+                        <ul class="space-y-3 text-gray-300">
+                            <li class="flex items-start"><span class="text-red-400 mr-3 mt-1">•</span> <span>you need scripting, recording, editing, paying for voiceovers, b-roll, music</span></li>
+                            <li class="flex items-start"><span class="text-red-400 mr-3 mt-1">•</span> <span>it takes HOURS to produce ONE FACELESS VIDEO!</span></li>
+                            <li class="flex items-start"><span class="text-red-400 mr-3 mt-1">•</span> <span>And with all that outsourcing, it can cost $40 to $50 PER VIDEO… and that's if you do it efficiently.</span></li>
+                        </ul>
                     </div>
                     
-                    <div class="flex items-center space-x-6 text-gray-400">
-                        <div class="flex items-center">
-                            <i class="fas fa-star text-yellow-400 mr-1"></i>
-                            <i class="fas fa-star text-yellow-400 mr-1"></i>
-                            <i class="fas fa-star text-yellow-400 mr-1"></i>
-                            <i class="fas fa-star text-yellow-400 mr-1"></i>
-                            <i class="fas fa-star text-yellow-400 mr-1"></i>
-                            <span class="ml-2">4.9/5 Rating</span>
-                        </div>
-                        <div class="flex items-center">
-                            <i class="fas fa-users text-purple-400 mr-2"></i>
-                            <span>10,000+ Creators</span>
-                        </div>
+                    <div class="bg-yellow-600/20 p-6 rounded-2xl border-2 border-yellow-500">
+                        <h3 class="text-2xl font-black text-yellow-400 mb-4">And, even if you use AI, you can still get stuck doing the grunt work:</h3>
+                        <ul class="space-y-3 text-gray-300">
+                            <li class="flex items-start"><span class="text-yellow-400 mr-3 mt-1">•</span> <span>thumbnails, editing, uploading, writing descriptions…</span></li>
+                        </ul>
+                        <p class="text-gray-300 mt-4 italic">
+                            It's tedious. Time-consuming. And let's face it — it kills the whole passive income dream.
+                        </p>
                     </div>
                 </div>
                 
-                <div class="relative">
-                    <div class="video-container pulse-glow">
-                        <!-- Demo Video Placeholder -->
-                        <div class="absolute inset-0 bg-gradient-to-br from-purple-900 to-pink-700 flex items-center justify-center rounded-xl">
-                            <div class="text-center">
-                                <i class="fas fa-play-circle text-6xl text-white opacity-80 mb-4"></i>
-                                <p class="text-white font-bold text-xl">Kairah Studio Demo</p>
-                                <p class="text-gray-300 mt-2">See how we create Hollywood-quality videos in minutes</p>
-                            </div>
-                        </div>
+                <div>
+                    <div class="bg-gradient-to-br from-green-600/20 to-blue-600/20 p-8 rounded-2xl border-2 border-green-500">
+                        <h3 class="text-3xl font-black gold-text mb-4">But what if I told you there's a faster, cheaper, and radically different way to build faceless video channels — without lifting a finger?</h3>
+                        
+                        <p class="text-xl text-gray-300 mb-6">
+                            A new "hands-free" method that AUTOMATES EVERYTHING:
+                        </p>
+                        
+                        <ul class="space-y-4 text-gray-300">
+                            <li class="flex items-center"><span class="text-green-400 mr-3 text-xl">✅</span> <span class="font-semibold">Video creation…</span></li>
+                            <li class="flex items-center"><span class="text-green-400 mr-3 text-xl">✅</span> <span class="font-semibold">Thumbnails…</span></li>
+                            <li class="flex items-center"><span class="text-green-400 mr-3 text-xl">✅</span> <span class="font-semibold">Uploading…</span></li>
+                            <li class="flex items-center"><span class="text-green-400 mr-3 text-xl">✅</span> <span class="font-semibold">Descriptions…</span></li>
+                            <li class="flex items-center"><span class="text-green-400 mr-3 text-xl">✅</span> <span class="font-semibold">Scheduled posting…</span></li>
+                        </ul>
+                        
+                        <p class="text-xl text-gray-300 mt-6">
+                            And DOES THIS ALL FOR YOU, 24/7... even while you sleep?
+                        </p>
                     </div>
                     
-                    <div class="absolute -bottom-6 -left-6 bg-gradient-to-r from-purple-600 to-pink-600 text-white py-2 px-6 rounded-lg shadow-lg">
-                        <span class="font-bold">47M+</span> Videos Created
+                    <p class="text-2xl text-center text-gray-300 mt-6 font-bold">
+                        Welcome to the "set-it-and-forget-it" passive income revolution called AI faceless video — where passive income is no longer a myth... it's your own automated content and traffic machine!
+                    </p>
+                    
+                    <div class="text-center mt-8">
+                        <button class="btn-primary px-8 py-4 rounded-xl font-bold text-lg">
+                            Yes, I Want Automated Cash Flow Systems!
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Stats Bar -->
-    <section class="py-10 bg-black/30">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-                <div class="stat-card p-6 rounded-xl text-center">
-                    <div class="text-3xl font-black gold-text mb-2">10,000+</div>
-                    <div class="text-gray-400">Active Creators</div>
-                </div>
-                <div class="stat-card p-6 rounded-xl text-center">
-                    <div class="text-3xl font-black gold-text mb-2">47M+</div>
-                    <div class="text-gray-400">Videos Generated</div>
-                </div>
-                <div class="stat-card p-6 rounded-xl text-center">
-                    <div class="text-3xl font-black gold-text mb-2">94%</div>
-                    <div class="text-gray-400">Faster Production</div>
-                </div>
-                <div class="stat-card p-6 rounded-xl text-center">
-                    <div class="text-3xl font-black gold-text mb-2">$2.3M+</div>
-                    <div class="text-gray-400">Revenue Generated</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section id="features" class="py-20 px-4">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="text-5xl md:text-7xl font-black text-center mb-4">
-                <span class="gold-text">The Architecture of</span><br>
-                <span class="text-white">Empire Building</span>
+    <!-- Introducing Kairah Studio -->
+    <section class="sales-section">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-4xl md:text-5xl font-black mb-6">
+                <span class="gold-text">Introducing:</span><br>
+                <span class="text-white">Kairah Studio</span>
             </h2>
-            <p class="text-2xl text-center text-gray-400 mb-16 max-w-4xl mx-auto">
-                How Kairah Studio's Revolutionary Technology Makes Every Other AI Video Tool Instantly Obsolete
+            
+            <p class="text-2xl md:text-3xl text-gray-300 mb-8">
+                It Builds the Videos...<br>
+                It Posts the Videos...<br>
+                You Just Watch the Results Roll In...
             </p>
-
-            <!-- Core Technology Stack -->
-            <div class="blood-red p-8 rounded-2xl border-2 border-yellow-400 mb-16 purple-glow">
-                <h3 class="text-3xl font-black mb-6 text-yellow-400">🧠 THE 7-PILLAR TECHNOLOGY STACK THAT MAKES THIS POSSIBLE</h3>
-                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <div class="feature-card p-6 rounded-xl text-center">
-                        <div class="text-4xl mb-4">🎭</div>
-                        <h4 class="text-lg font-black gold-text mb-2">Contextual Narrative Engine</h4>
-                        <p class="text-sm text-gray-300">Understands story arcs, character development, and emotional pacing</p>
-                    </div>
-                    <div class="feature-card p-6 rounded-xl text-center">
-                        <div class="text-4xl mb-4">🎵</div>
-                        <h4 class="text-lg font-black gold-text mb-2">Multi-Modal Fusion Core</h4>
-                        <p class="text-sm text-gray-300">Synchronizes video, audio, and effects automatically</p>
-                    </div>
-                    <div class="feature-card p-6 rounded-xl text-center">
-                        <div class="text-4xl mb-4">🏷️</div>
-                        <h4 class="text-lg font-black gold-text mb-2">Brand DNA Lock System</h4>
-                        <p class="text-sm text-gray-300">Maintains perfect brand consistency across all content</p>
-                    </div>
-                    <div class="feature-card p-6 rounded-xl text-center">
-                        <div class="text-4xl mb-4">📈</div>
-                        <h4 class="text-lg font-black gold-text mb-2">Profit Pipeline AI</h4>
-                        <p class="text-sm text-gray-300">Pre-engineers content for maximum conversion</p>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-gradient-to-r from-purple-600/30 to-pink-600/30 p-8 rounded-2xl border-2 border-purple-500 mb-8">
+                    <p class="text-2xl font-bold text-white">
+                        And here's the best part…
+                    </p>
+                </div>
+                
+                <p class="text-xl text-gray-300 mb-8">
+                    You've probably seen the stories: people quietly launching faceless YouTube channels… then pulling in $10K… $20K… even $50K per month.
+                </p>
+                
+                <p class="text-xl text-gray-300 mb-8">
+                    Thanks to a breakthrough strategy developed by our team at Kairah Studio, now you can!
+                </p>
+                
+                <p class="text-xl text-gray-300 mb-8">
+                    With this system, you don't build a channel — you think it into existence, almost like magic!
+                </p>
+                
+                <p class="text-xl text-gray-300 mb-8">
+                    It's like deploying a 24/7 bot army that works around the clock to grow your channel, your views, your traffic, and your income… all while you sleep, travel, or just enjoy life.
+                </p>
+                
+                <div class="bg-yellow-600/20 p-6 rounded-2xl border-2 border-yellow-500 mb-8">
+                    <p class="text-2xl font-black text-yellow-400">
+                        🔥 No editing. No uploading. No headaches. Just faceless channels producing cash on autopilot.
+                    </p>
+                </div>
+                
+                <p class="text-xl text-gray-300 mb-8">
+                    And you're not limited to one channel.
+                </p>
+                
+                <p class="text-xl text-gray-300 mb-8">
+                    We show you how you can build multiple channels in all kinds of different niches so you can multiply your income streams like crazy…
+                </p>
+                
+                <p class="text-2xl text-gray-300 mb-8 font-bold">
+                    This is like owning your own media empire… and all without showing your face or saying a single word.
+                </p>
+            </div>
+            
+            <div class="max-w-5xl mx-auto">
+                <div class="video-container pulse-glow mb-8">
+                    <div class="absolute inset-0 bg-gradient-to-br from-blue-900 to-green-700 flex items-center justify-center rounded-xl">
+                        <div class="text-center">
+                            <i class="fas fa-crown text-6xl text-white opacity-80 mb-4"></i>
+                            <p class="text-white font-bold text-xl">Kairah Studio Empire Builder</p>
+                            <p class="text-gray-300 mt-2">See how to build multiple automated channels</p>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <!-- Detailed Feature Breakdown -->
-            <div class="space-y-12">
-                <!-- Feature 1 -->
-                <div class="grid lg:grid-cols-2 gap-8 items-center">
-                    <div class="bg-gradient-to-br from-purple-600/20 to-pink-600/20 p-8 rounded-2xl border-2 border-purple-500">
-                        <h3 class="text-3xl font-black mb-4 gold-text">🎬 Contextual Narrative Engine</h3>
-                        <p class="text-lg text-gray-300 mb-4">While other AI tools process words, Kairah understands meaning. Our proprietary narrative engine analyzes:</p>
-                        <ul class="space-y-3 text-gray-300">
-                            <li class="flex items-center"><span class="text-green-400 mr-3">✓</span> <strong>Emotional Arcs:</strong> Builds tension and resolution naturally</li>
-                            <li class="flex items-center"><span class="text-green-400 mr-3">✓</span> <strong>Character Motivation:</strong> Understands why characters act</li>
-                            <li class="flex items-center"><span class="text-green-400 mr-3">✓</span> <strong>Plot Development:</strong> Creates compelling story progression</li>
-                            <li class="flex items-center"><span class="text-green-400 mr-3">✓</span> <strong>Thematic Consistency:</strong> Maintains core message throughout</li>
-                            <li class="flex items-center"><span class="text-green-400 mr-3">✓</span> <strong>Audience Psychology:</strong> Tailors content to viewer emotions</li>
-                        </ul>
-                    </div>
-                    <div class="bg-black/20 p-6 rounded-2xl">
-                        <div class="text-center p-4 bg-black/40 rounded-xl mb-4">
-                            <p class="font-black gold-text">REAL-WORLD EXAMPLE</p>
-                        </div>
-                        <div class="space-y-4">
-                            <div class="bg-red-600/20 p-4 rounded-xl">
-                                <p class="text-sm font-black text-red-400">VEO 3 INPUT:</p>
-                                <p class="text-gray-300 italic">"Businessman giving presentation"</p>
-                            </div>
-                            <div class="bg-green-600/20 p-4 rounded-xl">
-                                <p class="text-sm font-black text-green-400">KAIRAH INPUT:</p>
-                                <p class="text-gray-300 italic">"A confident entrepreneur pitches to skeptical investors, building excitement then addressing concerns before closing with visionary opportunity"</p>
-                            </div>
-                            <div class="bg-blue-600/20 p-4 rounded-xl">
-                                <p class="text-sm font-black text-blue-400">RESULT DIFFERENCE:</p>
-                                <p class="text-gray-300">Veo: Generic talking head. Kairah: Compelling business narrative with emotional journey.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Feature 2 -->
-                <div class="grid lg:grid-cols-2 gap-8 items-center">
-                    <div class="bg-black/20 p-6 rounded-2xl order-2 lg:order-1">
-                        <div class="text-center p-4 bg-black/40 rounded-xl mb-4">
-                            <p class="font-black gold-text">TECHNICAL BREAKTHROUGH</p>
-                        </div>
-                        <div class="space-y-4">
-                            <div class="bg-purple-600/20 p-4 rounded-xl">
-                                <p class="text-sm font-black text-purple-400">PROPRIETARY ARCHITECTURE</p>
-                                <p class="text-gray-300 text-sm">7-layer neural network trained on 47 million hours of cinematic content</p>
-                            </div>
-                            <div class="bg-blue-600/20 p-4 rounded-xl">
-                                <p class="text-sm font-black text-blue-400">REAL-TIME SYNCHRONIZATION</p>
-                                <p class="text-gray-300 text-sm">Audio, video, and effects perfectly timed to millisecond accuracy</p>
-                            </div>
-                            <div class="bg-green-600/20 p-4 rounded-xl">
-                                <p class="text-sm font-black text-green-400">AUTOMATIC OPTIMIZATION</p>
-                                <p class="text-gray-300 text-sm">Each platform gets perfect format without manual adjustment</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="bg-gradient-to-br from-blue-600/20 to-green-600/20 p-8 rounded-2xl border-2 border-blue-500 order-1 lg:order-2">
-                        <h3 class="text-3xl font-black mb-4 gold-text">🎵 Multi-Modal Fusion Core</h3>
-                        <p class="text-lg text-gray-300 mb-4">Other tools give you separate elements. Kairah gives you finished productions. Our fusion technology:</p>
-                        <ul class="space-y-3 text-gray-300">
-                            <li class="flex items-center"><span class="text-green-400 mr-3">✓</span> <strong>Emotional Music Scoring:</strong> Composes original music matching scene emotion</li>
-                            <li class="flex items-center"><span class="text-green-400 mr-3">✓</span> <strong>Intelligent Sound Design:</strong> Adds ambient sounds and effects automatically</li>
-                            <li class="flex items-center"><span class="text-green-400 mr-3">✓</span> <strong>Perfect Audio Sync:</strong> Matches audio peaks to visual moments</li>
-                            <li class="flex items-center"><span class="text-green-400 mr-3">✓</span> <strong>Dynamic Pacing:</strong> Adjusts rhythm based on narrative tension</li>
-                            <li class="flex items-center"><span class="text-green-400 mr-3">✓</span> <strong>Brand Audio Identity:</strong> Maintains consistent sonic branding</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Feature 3 -->
-                <div class="grid lg:grid-cols-2 gap-8 items-center">
-                    <div class="bg-gradient-to-br from-green-600/20 to-yellow-600/20 p-8 rounded-2xl border-2 border-green-500">
-                        <h3 class="text-3xl font-black mb-4 gold-text">🏷️ Brand DNA Lock System</h3>
-                        <p class="text-lg text-gray-300 mb-4">Set your brand identity once. Every video automatically matches perfectly. No more inconsistent content.</p>
-                        <ul class="space-y-3 text-gray-300">
-                            <li class="flex items-center"><span class="text-green-400 mr-3">✓</span> <strong>Visual Identity:</strong> Colors, fonts, logos applied automatically</li>
-                            <li class="flex items-center"><span class="text-green-400 mr-3">✓</span> <strong>Voice & Tone:</strong> Maintains consistent brand personality</li>
-                            <li class="flex items-center"><span class="text-green-400 mr-3">✓</span> <strong>Content Guidelines:</strong> Enforces brand rules across all videos</li>
-                            <li class="flex items-center"><span class="text-green-400 mr-3">✓</span> <strong>Platform Adaptation:</strong> Optimizes for each channel while staying on-brand</li>
-                            <li class="flex items-center"><span class="text-green-400 mr-3">✓</span> <strong>Team Consistency:</strong> Multiple creators, one unified brand voice</li>
-                        </ul>
-                    </div>
-                    <div class="bg-black/20 p-6 rounded-2xl">
-                        <div class="text-center p-4 bg-black/40 rounded-xl mb-4">
-                            <p class="font-black gold-text">BRAND CONSISTENCY EXAMPLE</p>
-                        </div>
-                        <div class="space-y-3 text-sm text-gray-300">
-                            <div class="flex justify-between items-center p-3 bg-purple-600/20 rounded">
-                                <span>YouTube Video</span>
-                                <span class="text-green-400">✓ Perfect branding</span>
-                            </div>
-                            <div class="flex justify-between items-center p-3 bg-blue-600/20 rounded">
-                                <span>TikTok Clip</span>
-                                <span class="text-green-400">✓ Perfect branding</span>
-                            </div>
-                            <div class="flex justify-between items-center p-3 bg-green-600/20 rounded">
-                                <span>Instagram Reel</span>
-                                <span class="text-green-400">✓ Perfect branding</span>
-                            </div>
-                            <div class="flex justify-between items-center p-3 bg-red-600/20 rounded">
-                                <span>Facebook Ad</span>
-                                <span class="text-green-400">✓ Perfect branding</span>
-                            </div>
-                            <div class="flex justify-between items-center p-3 bg-yellow-600/20 rounded">
-                                <span>LinkedIn Post</span>
-                                <span class="text-green-400">✓ Perfect branding</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            
+            <div class="text-center mt-8">
+                <button class="btn-primary px-8 py-4 rounded-xl font-bold text-lg">
+                    I Want My Own Media Empire!
+                </button>
             </div>
         </div>
     </section>
 
-    <!-- Content Types Section -->
-    <section id="content" class="py-20 px-4 bg-black/30">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="text-5xl md:text-7xl font-black text-center mb-4">
-                <span class="gold-text">47+ Content Types</span><br>
-                <span class="text-white">That Print Money</span>
-            </h2>
-            <p class="text-2xl text-center text-gray-400 mb-16 max-w-4xl mx-auto">
-                Pre-Engineered Profit Machines That Convert While You Sleep
-            </p>
-
-            <!-- Content Categories -->
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-                <!-- Category 1 -->
-                <div class="feature-card p-8 rounded-2xl border-2 border-red-600">
-                    <div class="text-6xl mb-4 text-center">📺</div>
-                    <h3 class="text-2xl font-black mb-4 gold-text text-center">YouTube Empire Suite</h3>
-                    <ul class="space-y-3 text-gray-300">
-                        <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> Viral Video Scripts</li>
-                        <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> SEO-Optimized Descriptions</li>
-                        <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> Thumbnail Generation</li>
-                        <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> Channel Trailers</li>
-                        <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> Product Reviews</li>
-                        <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> Tutorial Series</li>
-                    </ul>
-                </div>
-
-                <!-- Category 2 -->
-                <div class="feature-card p-8 rounded-2xl border-2 border-pink-600">
-                    <div class="text-6xl mb-4 text-center">🎵</div>
-                    <h3 class="text-2xl font-black mb-4 gold-text text-center">TikTok Dominance Pack</h3>
-                    <ul class="space-y-3 text-gray-300">
-                        <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> Viral Hook Templates</li>
-                        <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> Trending Audio Integration</li>
-                        <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> Hashtag Strategy Engine</li>
-                        <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> Story Sequence Templates</li>
-                        <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> Duet & Stitch Content</li>
-                        <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> Daily Content Calendar</li>
-                    </ul>
-                </div>
-
-                <!-- Category 3 -->
-                <div class="feature-card p-8 rounded-2xl border-2 border-blue-600">
-                    <div class="text-6xl mb-4 text-center">👥</div>
-                    <h3 class="text-2xl font-black mb-4 gold-text text-center">Facebook Ad Arsenal</h3>
-                    <ul class="space-y-3 text-gray-300">
-                        <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> High-Converting Ad Templates</li>
-                        <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> Customer Avatar Targeting</li>
-                        <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> Emotional Story Arcs</li>
-                        <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> UGC-Style Authenticity</li>
-                        <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> Retargeting Sequences</li>
-                        <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> Lookalike Audience Content</li>
-                    </ul>
-                </div>
-
-                <!-- Category 4 -->
-                <div class="feature-card p-8 rounded-2xl border-2 border-purple-600">
-                    <div class="text-6xl mb-4 text-center">📱</div>
-                    <h3 class="text-2xl font-black mb-4 gold-text text-center">Instagram Reels Engine</h3>
-                    <ul class="space-y-3 text-gray-300">
-                        <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> Reels-First Optimization</li>
-                        <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> Story Continuation Hooks</li>
-                        <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> Carousel Content Creation</li>
-                        <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> IGTV Long-Form Content</li>
-                        <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> Hashtag Performance Tracking</li>
-                        <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> Engagement Bait Templates</li>
-                    </ul>
-                </div>
-
-                <!-- Category 5 -->
-                <div class="feature-card p-8 rounded-2xl border-2 border-green-600">
-                    <div class="text-6xl mb-4 text-center">🌟</div>
-                    <h3 class="text-2xl font-black mb-4 gold-text text-center">UGC Content Factory</h3>
-                    <ul class="space-y-3 text-gray-300">
-                        <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> Authentic User-Generated Style</li>
-                        <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> Brand Integration Templates</li>
-                        <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> Product Demonstration Videos</li>
-                        <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> Testimonial Creation</li>
-                        <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> Influencer-Style Content</li>
-                        <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> Behind-the-Scenes Content</li>
-                    </ul>
-                </div>
-
-                <!-- Category 6 -->
-                <div class="feature-card p-8 rounded-2xl border-2 border-yellow-600">
-                    <div class="text-6xl mb-4 text-center">💼</div>
-                    <h3 class="text-2xl font-black mb-4 gold-text text-center">Business & Corporate Suite</h3>
-                    <ul class="space-y-3 text-gray-300">
-                        <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> Corporate Training Modules</li>
-                        <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> Investor Pitch Decks</li>
-                        <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> Sales Enablement Content</li>
-                        <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> Internal Communications</li>
-                        <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> Recruitment Videos</li>
-                        <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> Company Culture Content</li>
-                    </ul>
-                </div>
+    <!-- Social Proof Section -->
+    <section class="sales-section bg-black/20">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <div class="blood-red p-8 rounded-2xl border-2 border-yellow-400 mb-12 purple-glow">
+                <h3 class="text-3xl font-black text-yellow-400">Kairah Studio Is HOT!!</h3>
+                <p class="text-2xl text-white mt-4">We Hit #1 In The Marketplace IN JUST 35 MINUTES FROM LAUNCH!</p>
             </div>
-
-            <!-- Content Performance Metrics -->
-            <div class="blood-red p-8 rounded-2xl border-2 border-yellow-400 text-center purple-glow">
-                <h3 class="text-3xl font-black mb-6 text-yellow-400">📊 PROVEN PERFORMANCE METRICS</h3>
-                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <div class="bg-black/40 p-6 rounded-xl">
-                        <div class="text-3xl font-black gold-text">3-7x</div>
-                        <div class="text-lg">Higher Conversion Rates</div>
-                    </div>
-                    <div class="bg-black/40 p-6 rounded-xl">
-                        <div class="text-3xl font-black gold-text">47%</div>
-                        <div class="text-lg">More Engagement</div>
-                    </div>
-                    <div class="bg-black/40 p-6 rounded-xl">
-                        <div class="text-3xl font-black gold-text">94%</div>
-                        <div class="text-lg">Faster Production</div>
-                    </div>
-                    <div class="bg-black/40 p-6 rounded-xl">
-                        <div class="text-3xl font-black gold-text">$2.3M+</div>
-                        <div class="text-lg">Client Revenue Generated</div>
-                    </div>
+            
+            <h2 class="text-4xl md:text-5xl font-black mb-12">
+                <span class="gold-text">The $10K Coaching Trap:</span><br>
+                <span class="text-white">Why They Need You to Believe It's Hard</span>
+            </h2>
+            
+            <div class="max-w-4xl mx-auto text-left">
+                <p class="text-xl text-gray-300 mb-6">
+                    If you've ever thought about launching a faceless YouTube or TikTok channel, it probably looked like way too much work.
+                </p>
+                
+                <p class="text-xl text-gray-300 mb-6">
+                    You've seen the typical "guru" path:
+                </p>
+                
+                <div class="bg-red-600/20 p-6 rounded-2xl border-2 border-red-500 mb-8">
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="flex items-center"><span class="text-red-400 mr-3">✅</span> <span>Spend hours researching video ideas</span></li>
+                        <li class="flex items-center"><span class="text-red-400 mr-3">✅</span> <span>Write your own scripts</span></li>
+                        <li class="flex items-center"><span class="text-red-400 mr-3">✅</span> <span>Pay editors, voiceover artists, and thumbnail designers</span></li>
+                        <li class="flex items-center"><span class="text-red-400 mr-3">✅</span> <span>Manually upload and hope for views</span></li>
+                        <li class="flex items-center"><span class="text-red-400 mr-3">✅</span> <span>Or… pay an "expert" $10,000+ for coaching that just teaches you the same old grind</span></li>
+                    </ul>
                 </div>
+                
+                <p class="text-xl text-gray-300 mb-6">
+                    No wonder most people never get started.
+                </p>
+                
+                <p class="text-xl text-gray-300 mb-6">
+                    But here's the truth they never tell you:
+                </p>
+                
+                <div class="bg-yellow-600/20 p-6 rounded-2xl border-2 border-yellow-500 mb-8">
+                    <p class="text-2xl font-black text-yellow-400 text-center">
+                        That model is an older model that is broken.
+                    </p>
+                </div>
+                
+                <p class="text-xl text-gray-300 mb-6">
+                    Most creators burn out — not because the opportunity isn't real, but because that system is stuck in the past.
+                </p>
+                
+                <p class="text-xl text-gray-300 mb-6">
+                    And even the new AI tools? They still keep you glued to the screen doing a lot of grunt work yourself.
+                </p>
+                
+                <p class="text-xl text-gray-300 mb-6">
+                    That's why we flipped the script…
+                </p>
+                
+                <p class="text-xl text-gray-300 mb-6">
+                    We removed the bottlenecks, the tech headaches, and the endless to-do list — and replaced them with ONE FULLY AUTOMATED SYSTEM that creates, uploads, and schedules your videos for you.
+                </p>
+            </div>
+            
+            <div class="text-center mt-8">
+                <button class="btn-primary px-8 py-4 rounded-xl font-bold text-lg">
+                    I Don't Want The OLD WAY. Give Me The NEW WAY that is AUTOMATED!
+                </button>
             </div>
         </div>
     </section>
 
-    <!-- Case Studies Section -->
-    <section id="case-studies" class="py-20 px-4 bg-black/40">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="text-5xl md:text-7xl font-black text-center mb-4">
-                <span class="gold-text">Real Results</span><br>
-                <span class="text-white">From Real Empire Builders</span>
+    <!-- Results Section -->
+    <section class="sales-section">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-4xl md:text-5xl font-black mb-12">
+                <span class="gold-text">These People Below Are Doing These Numbers</span><br>
+                <span class="text-white">WITHOUT Our Automated Strategy...</span>
             </h2>
-            <p class="text-2xl text-center text-gray-400 mb-16 max-w-4xl mx-auto">
-                Don't Take Our Word For It - See What Happens When Creators Switch From Veo 3 to Kairah Studio
+            
+            <p class="text-2xl md:text-3xl text-gray-300 mb-12">
+                Imagine What You Could Do With Our "Set It And Forget It"<br>
+                Fully Automated Video Creation AND Posting System?!?
             </p>
-
-            <!-- Case Study 1 -->
-            <div class="grid lg:grid-cols-2 gap-12 mb-20 items-center">
-                <div class="bg-gradient-to-br from-purple-600/20 to-pink-600/20 p-8 rounded-2xl border-2 border-purple-500">
-                    <div class="flex items-center mb-6">
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="testimonial-card">
+                    <div class="flex items-center mb-4">
                         <div class="w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center text-2xl font-black text-black mr-4">SC</div>
                         <div>
-                            <h3 class="text-2xl font-black gold-text">Sarah Chen</h3>
-                            <p class="text-gray-400">Agency Owner - Former Veo 3 User</p>
+                            <h3 class="text-xl font-black gold-text">Sarah Chen</h3>
+                            <p class="text-gray-400">Agency Owner</p>
                         </div>
                     </div>
-                    
-                    <div class="space-y-6">
-                        <div class="bg-black/40 p-4 rounded-xl">
-                            <p class="font-black text-red-400 mb-2">BEFORE KAIRAH (Using Veo 3):</p>
-                            <ul class="text-gray-300 space-y-2">
-                                <li>• $12,000/month video agency expenses</li>
-                                <li>• 3-week turnaround for client projects</li>
-                                <li>• Constant client complaints about "generic" content</li>
-                                <li>• Losing bids to cheaper competitors</li>
-                                <li>• 60-hour work weeks managing video production</li>
-                            </ul>
-                        </div>
-
-                        <div class="bg-black/40 p-4 rounded-xl">
-                            <p class="font-black text-green-400 mb-2">AFTER KAIRAH STUDIO:</p>
-                            <ul class="text-gray-300 space-y-2">
-                                <li>• <strong>Fired the $12,000/month agency</strong></li>
-                                <li>• <strong>48-hour turnaround</strong> for client projects</li>
-                                <li>• Client satisfaction scores <strong>increased 47%</strong></li>
-                                <li>• <strong>Won 12 new clients</strong> in first month</li>
-                                <li>• <strong>20-hour work weeks</strong> with better results</li>
-                                <li>• <strong>Net savings: $11,500/month</strong></li>
-                            </ul>
-                        </div>
-
-                        <div class="bg-yellow-400/20 p-4 rounded-xl border-2 border-yellow-400">
-                            <p class="font-black text-yellow-400">SARAH'S VERDICT:</p>
-                            <p class="text-gray-300 italic">"I was skeptical about replacing my entire video agency with software. Within 72 hours of using Kairah, I fired my $12,000/month agency. The content quality actually IMPROVED while saving me $11,500 monthly. This paid for itself in 2 hours."</p>
-                        </div>
+                    <p class="text-gray-300 italic mb-4">
+                        "I was skeptical about replacing my entire video agency with software. Within 72 hours of using Kairah, I fired my $12,000/month agency. The content quality actually IMPROVED while saving me $11,500 monthly."
+                    </p>
+                    <div class="bg-green-600/20 p-3 rounded-lg">
+                        <p class="text-green-400 font-bold">$11,500/month savings</p>
                     </div>
                 </div>
-
-                <div class="bg-black/20 p-8 rounded-2xl">
-                    <h3 class="text-2xl font-black mb-6 gold-text text-center">📈 PERFORMANCE METRICS</h3>
-                    <div class="space-y-4">
-                        <div class="flex justify-between items-center p-4 bg-red-600/20 rounded-xl">
-                            <span class="font-black">Client Project Turnaround</span>
-                            <div class="text-right">
-                                <div class="text-red-400 line-through">3 Weeks</div>
-                                <div class="text-green-400 font-black">48 Hours</div>
-                            </div>
-                        </div>
-                        <div class="flex justify-between items-center p-4 bg-green-600/20 rounded-xl">
-                            <span class="font-black">Monthly Agency Costs</span>
-                            <div class="text-right">
-                                <div class="text-red-400 line-through">$12,000</div>
-                                <div class="text-green-400 font-black">$500</div>
-                            </div>
-                        </div>
-                        <div class="flex justify-between items-center p-4 bg-blue-600/20 rounded-xl">
-                            <span class="font-black">Client Satisfaction</span>
-                            <div class="text-right">
-                                <div class="text-red-400">68%</div>
-                                <div class="text-green-400 font-black">94%</div>
-                            </div>
-                        </div>
-                        <div class="flex justify-between items-center p-4 bg-purple-600/20 rounded-xl">
-                            <span class="font-black">New Clients/Month</span>
-                            <div class="text-right">
-                                <div class="text-red-400">2-3</div>
-                                <div class="text-green-400 font-black">12+</div>
-                            </div>
-                        </div>
-                        <div class="flex justify-between items-center p-4 bg-yellow-600/20 rounded-xl">
-                            <span class="font-black">Work Hours/Week</span>
-                            <div class="text-right">
-                                <div class="text-red-400">60+</div>
-                                <div class="text-green-400 font-black">20</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Case Study 2 -->
-            <div class="grid lg:grid-cols-2 gap-12 mb-20 items-center">
-                <div class="bg-black/20 p-8 rounded-2xl order-2 lg:order-1">
-                    <h3 class="text-2xl font-black mb-6 gold-text text-center">🚀 GROWTH EXPLOSION</h3>
-                    <div class="space-y-4">
-                        <div class="bg-gradient-to-r from-red-500 to-green-500 p-4 rounded-xl">
-                            <div class="flex justify-between items-center">
-                                <span class="font-black">TikTok Followers</span>
-                                <span class="font-black text-white">10,000 → 1,200,000</span>
-                            </div>
-                            <div class="w-full bg-black/40 rounded-full h-2 mt-2">
-                                <div class="bg-green-500 h-2 rounded-full" style="width: 100%"></div>
-                            </div>
-                        </div>
-                        <div class="bg-gradient-to-r from-red-500 to-green-500 p-4 rounded-xl">
-                            <div class="flex justify-between items-center">
-                                <span class="font-black">Monthly Views</span>
-                                <span class="font-black text-white">47,000 → 47,000,000</span>
-                            </div>
-                            <div class="w-full bg-black/40 rounded-full h-2 mt-2">
-                                <div class="bg-green-500 h-2 rounded-full" style="width: 100%"></div>
-                            </div>
-                        </div>
-                        <div class="bg-gradient-to-r from-red-500 to-green-500 p-4 rounded-xl">
-                            <div class="flex justify-between items-center">
-                                <span class="font-black">Brand Deals/Month</span>
-                                <span class="font-black text-white">$0 → $15,000</span>
-                            </div>
-                            <div class="w-full bg-black/40 rounded-full h-2 mt-2">
-                                <div class="bg-green-500 h-2 rounded-full" style="width: 100%"></div>
-                            </div>
-                        </div>
-                        <div class="bg-gradient-to-r from-red-500 to-green-500 p-4 rounded-xl">
-                            <div class="flex justify-between items-center">
-                                <span class="font-black">Content Production Time</span>
-                                <span class="font-black text-white">3 hours → 3 minutes</span>
-                            </div>
-                            <div class="w-full bg-black/40 rounded-full h-2 mt-2">
-                                <div class="bg-green-500 h-2 rounded-full" style="width: 100%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bg-gradient-to-br from-blue-600/20 to-green-600/20 p-8 rounded-2xl border-2 border-blue-500 order-1 lg:order-2">
-                    <div class="flex items-center mb-6">
+                
+                <div class="testimonial-card">
+                    <div class="flex items-center mb-4">
                         <div class="w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center text-2xl font-black text-black mr-4">MJ</div>
                         <div>
-                            <h3 class="text-2xl font-black gold-text">Marcus Johnson</h3>
-                            <p class="text-gray-400">Content Creator - 1.2M TikTok Followers</p>
+                            <h3 class="text-xl font-black gold-text">Marcus Johnson</h3>
+                            <p class="text-gray-400">Content Creator</p>
                         </div>
                     </div>
-                    
-                    <div class="space-y-6">
-                        <div class="bg-black/40 p-4 rounded-xl">
-                            <p class="font-black text-red-400 mb-2">BEFORE KAIRAH (Struggling Creator):</p>
-                            <ul class="text-gray-300 space-y-2">
-                                <li>• 10,000 TikTok followers after 2 years</li>
-                                <li>• 3 hours to create each video</li>
-                                <li>• $0 from brand deals (too small)</li>
-                                <li>• 47,000 monthly views average</li>
-                                <li>• Considering quitting content creation</li>
-                            </ul>
+                    <p class="text-gray-300 italic mb-4">
+                        "I was ready to quit after 2 years of grinding for 10K followers. With Kairah, I went viral 3 times in my first 2 weeks. The templates are absolute cheat codes. I'm now making $15,000/month from brand deals."
+                    </p>
+                    <div class="bg-green-600/20 p-3 rounded-lg">
+                        <p class="text-green-400 font-bold">1.2M followers in 90 days</p>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center text-2xl font-black text-black mr-4">DR</div>
+                        <div>
+                            <h3 class="text-xl font-black gold-text">David Rodriguez</h3>
+                            <p class="text-gray-400">Freelance Video Editor</p>
                         </div>
-
-                        <div class="bg-black/40 p-4 rounded-xl">
-                            <p class="font-black text-green-400 mb-2">90 DAYS WITH KAIRAH STUDIO:</p>
-                            <ul class="text-gray-300 space-y-2">
-                                <li>• <strong>Exploded to 1.2M followers</strong> in 90 days</li>
-                                <li>• <strong>3 minutes</strong> to create each video</li>
-                                <li>• <strong>$15,000/month</strong> from brand deals</li>
-                                <li>• <strong>47M+ monthly views</strong></li>
-                                <li>• <strong>Went viral 12 times</strong> in 3 months</li>
-                            </ul>
-                        </div>
-
-                        <div class="bg-yellow-400/20 p-4 rounded-xl border-2 border-yellow-400">
-                            <p class="font-black text-yellow-400">MARCUS'S BREAKTHROUGH:</p>
-                            <p class="text-gray-300 italic">"I was ready to quit after 2 years of grinding for 10K followers. With Kairah, I went viral 3 times in my first 2 weeks. The templates are absolute cheat codes. I'm now making $15,000/month from brand deals and growing faster than I ever thought possible."</p>
+                    </div>
+                    <p class="text-gray-300 italic mb-4">
+                        "Spent $497 on lifetime access, landed $47,000 in client work first month. ROI: 9,380%. This is the best investment I've ever made in my business."
+                    </p>
+                    <div class="bg-green-600/20 p-3 rounded-lg">
+                        <p class="text-green-400 font-bold">9,380% ROI in first month</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="max-w-5xl mx-auto">
+                <div class="video-container pulse-glow mb-8">
+                    <div class="absolute inset-0 bg-gradient-to-br from-purple-900 to-pink-700 flex items-center justify-center rounded-xl">
+                        <div class="text-center">
+                            <i class="fas fa-chart-line text-6xl text-white opacity-80 mb-4"></i>
+                            <p class="text-white font-bold text-xl">Real User Results & Case Studies</p>
+                            <p class="text-gray-300 mt-2">See how real people are building automated income streams</p>
                         </div>
                     </div>
                 </div>
             </div>
+            
+            <div class="bg-gradient-to-r from-green-600/30 to-blue-600/30 p-8 rounded-2xl border-2 border-green-500 mt-12">
+                <p class="text-2xl font-bold text-white">
+                    When You Let the System Do the Work,<br>
+                    You Get Passive Income Machines That Run 24/7 Without You Lifting a Finger
+                </p>
+            </div>
+            
+            <p class="text-xl text-gray-300 mt-8 mb-8">
+                This is the hottest new way to build faceless channels — not just one, but multiple cash-producing digital assets…
+            </p>
+            
+            <p class="text-xl text-gray-300 mb-8">
+                And , right now, you're ahead of the wave.
+            </p>
+            
+            <p class="text-xl text-gray-300 mb-8">
+                But if you wait too long? Others will jump in — stacking subscribers, getting monetized, and collecting the income that YOU could've been making.
+            </p>
+            
+            <div class="bg-red-600/20 p-6 rounded-2xl border-2 border-red-500 mb-8">
+                <p class="text-2xl font-black text-red-400 text-center">
+                    So THIS is your window.
+                </p>
+            </div>
+            
+            <p class="text-xl text-gray-300 mb-8">
+                A moment of opportunity that may not exist a year from now — when the market floods and competition explodes.
+            </p>
+            
+            <p class="text-xl text-gray-300 mb-8">
+                But today?
+            </p>
+            
+            <p class="text-xl text-gray-300 mb-8">
+                You can flip the switch on a fully automated, self-replicating system that runs 24/7…
+            </p>
+            
+            <div class="bg-gradient-to-r from-purple-600/30 to-pink-600/30 p-6 rounded-2xl border-2 border-purple-500 mb-8">
+                <ul class="space-y-3 text-gray-300 text-left">
+                    <li class="flex items-center"><span class="text-purple-400 mr-3 text-xl">🚀</span> <span class="font-semibold">Creating videos</span></li>
+                    <li class="flex items-center"><span class="text-purple-400 mr-3 text-xl">🚀</span> <span class="font-semibold">Growing your audience</span></li>
+                    <li class="flex items-center"><span class="text-purple-400 mr-3 text-xl">🚀</span> <span class="font-semibold">Building passive income — while you live your life</span></li>
+                </ul>
+            </div>
+            
+            <p class="text-xl text-gray-300 mb-8">
+                And you're not limited to one channel or niche.
+            </p>
+            
+            <p class="text-xl text-gray-300 mb-8">
+                You can build a network.
+            </p>
+            
+            <p class="text-xl text-gray-300 mb-8">
+                Stack recurring revenue streams.
+            </p>
+            
+            <p class="text-xl text-gray-300 mb-8 font-bold">
+                Even flip channels for lump-sum cash.
+            </p>
+            
+            <div class="text-center mt-8">
+                <button class="btn-primary px-8 py-4 rounded-xl font-bold text-lg">
+                    We're Building Passive Income Machines That Can Be Sold For Cash? I'm In...
+                </button>
+            </div>
+        </div>
+    </section>
 
-            <!-- Additional Mini Case Studies -->
-            <div class="grid md:grid-cols-3 gap-6">
-                <div class="feature-card p-6 rounded-2xl text-center">
-                    <div class="text-4xl mb-4">💼</div>
-                    <h4 class="text-lg font-black gold-text mb-2">David Rodriguez</h4>
-                    <p class="text-sm text-gray-400 mb-3">Freelance Video Editor</p>
-                    <p class="text-gray-300 text-sm">"Spent $497 on lifetime access, landed $47,000 in client work first month. ROI: 9,380%"</p>
+    <!-- Vision Section -->
+    <section class="sales-section bg-black/20">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-4xl md:text-5xl font-black mb-12">
+                <span class="gold-text">Just imagine:</span>
+            </h2>
+            
+            <div class="max-w-4xl mx-auto text-left">
+                <div class="bg-gradient-to-r from-blue-600/20 to-green-600/20 p-6 rounded-2xl border-2 border-blue-500 mb-6">
+                    <p class="text-xl text-gray-300">
+                        <span class="text-blue-400 font-bold">👉</span> Six months from now, you're poolside… phone pings: another video posted, more commissions hit your account, even more buyers interested in your product / service.
+                    </p>
                 </div>
-                <div class="feature-card p-6 rounded-2xl text-center">
-                    <div class="text-4xl mb-4">🏢</div>
-                    <h4 class="text-lg font-black gold-text mb-2">Amanda Chen</h4>
-                    <p class="text-sm text-gray-400 mb-3">E-commerce Store Owner</p>
-                    <p class="text-gray-300 text-sm">"Product video conversions increased 327%. Generated $284,000 in additional revenue."</p>
+                
+                <div class="bg-gradient-to-r from-green-600/20 to-yellow-600/20 p-6 rounded-2xl border-2 border-green-500 mb-6">
+                    <p class="text-xl text-gray-300">
+                        <span class="text-green-400 font-bold">👉</span> Or you're on a tropical vacation and get notified that one of your channels (which took only minutes to create) sold for $75,000. Life is good.
+                    </p>
                 </div>
-                <div class="feature-card p-6 rounded-2xl text-center">
-                    <div class="text-4xl mb-4">🎓</div>
-                    <h4 class="text-lg font-black gold-text mb-2">Professor Williams</h4>
-                    <p class="text-sm text-gray-400 mb-3">Online Course Creator</p>
-                    <p class="text-gray-300 text-sm">"Course completion rates jumped from 23% to 84% with Kairah-generated video lessons."</p>
+                
+                <div class="bg-gradient-to-r from-yellow-600/20 to-purple-600/20 p-6 rounded-2xl border-2 border-yellow-500 mb-6">
+                    <p class="text-xl text-gray-300">
+                        <span class="text-yellow-400 font-bold">👉</span> Or you're finally taking your family on that dream trip — the one you could never afford… until now.
+                    </p>
+                </div>
+                
+                <div class="bg-gradient-to-r from-purple-600/20 to-pink-600/20 p-6 rounded-2xl border-2 border-purple-500 mb-6">
+                    <p class="text-2xl text-gray-300 font-bold text-center">
+                        FINALLY - money's easy.
+                    </p>
+                </div>
+                
+                <div class="bg-gradient-to-r from-pink-600/20 to-red-600/20 p-6 rounded-2xl border-2 border-pink-500 mb-6">
+                    <p class="text-xl text-gray-300 text-center">
+                        You don't check prices.
+                    </p>
+                </div>
+                
+                <div class="bg-gradient-to-r from-red-600/20 to-orange-600/20 p-6 rounded-2xl border-2 border-red-500 mb-6">
+                    <p class="text-xl text-gray-300 text-center">
+                        You just say, "Yes, I want that" — and buy it without a second thought.
+                    </p>
+                </div>
+                
+                <div class="bg-gradient-to-r from-orange-600/20 to-yellow-600/20 p-6 rounded-2xl border-2 border-orange-500 mb-6">
+                    <p class="text-xl text-gray-300">
+                        You can take care of yourself, your friends, your family in the ways you've always wanted.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="bg-yellow-600/20 p-6 rounded-2xl border-2 border-yellow-500 mt-8 mb-8">
+                <p class="text-2xl font-black text-yellow-400 text-center">
+                    That's not a fantasy.
+                </p>
+            </div>
+            
+            <p class="text-xl text-gray-300 mb-8">
+                That's what happens when you move at the right time.
+            </p>
+            
+            <p class="text-2xl text-gray-300 mb-8 font-bold">
+                And that time… is now.
+            </p>
+            
+            <div class="text-center mt-8">
+                <button class="btn-primary px-8 py-4 rounded-xl font-bold text-lg">
+                    Yes, I Want This...
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Creator Story -->
+    <section class="sales-section">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl md:text-5xl font-black text-center mb-12">
+                <span class="gold-text">We Got Sick of the Grind, Too!</span><br>
+                <span class="text-white">So We Developed A Strategy That Works Without Us</span>
+            </h2>
+            
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="bg-gradient-to-br from-purple-600/20 to-pink-600/20 p-8 rounded-2xl border-2 border-purple-500">
+                        <h3 class="text-3xl font-black gold-text mb-4">Meet The Kairah Studio Team...</h3>
+                        
+                        <p class="text-lg text-gray-300 mb-4">
+                            Our team comes from the world of digital product marketplaces, with millions of visitors and thousands of daily transactions.
+                        </p>
+                        
+                        <p class="text-lg text-gray-300 mb-4">
+                            But here's what most people don't know:
+                        </p>
+                        
+                        <p class="text-lg text-gray-300 mb-4">
+                            We're developers — "digital tinkerers" who are constantly breaking things on purpose… just to see how far we can push them.
+                        </p>
+                        
+                        <p class="text-lg text-gray-300 mb-4">
+                            When we came across the faceless video strategy, we were blown away by the potential. But in true fashion, we didn't just follow the method…
+                        </p>
+                        
+                        <p class="text-lg text-gray-300 mb-4 font-bold">
+                            We hacked it.
+                        </p>
+                        
+                        <p class="text-lg text-gray-300 mb-4">
+                            We reverse-engineered every step and streamlined every bottleneck.
+                        </p>
+                        
+                        <p class="text-lg text-gray-300 mb-4">
+                            And added our own behind-the-scenes automation tweaks that made the system 10X more effective — and completely hands-free.
+                        </p>
+                        
+                        <div class="bg-yellow-600/20 p-4 rounded-xl border-2 border-yellow-400 mt-6">
+                            <p class="text-yellow-400 font-bold">
+                                The result?
+                            </p>
+                            <p class="text-gray-300 mt-2">
+                                A passive video system unlike anything else out there — fast, simple, automated, and brutally effective.
+                            </p>
+                        </div>
+                        
+                        <p class="text-lg text-gray-300 mt-6">
+                            This isn't theory.
+                        </p>
+                        
+                        <p class="text-lg text-gray-300">
+                            This isn't recycled advice.
+                        </p>
+                        
+                        <p class="text-lg text-gray-300 font-bold">
+                            This is a battle-tested strategy, built by people who live in the trenches of digital product success.
+                        </p>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="bg-black/20 p-8 rounded-2xl">
+                        <h3 class="text-2xl font-black mb-6 gold-text text-center">Check Out What One Of Our Early Testers Did With A BRAND-NEW ACCOUNT (In Just The First 30 Minutes)</h3>
+                        
+                        <div class="video-container pulse-glow mb-6">
+                            <div class="absolute inset-0 bg-gradient-to-br from-blue-900 to-green-700 flex items-center justify-center rounded-xl">
+                                <div class="text-center">
+                                    <i class="fas fa-rocket text-6xl text-white opacity-80 mb-4"></i>
+                                    <p class="text-white font-bold text-xl">30-Minute Results Showcase</p>
+                                    <p class="text-gray-300 mt-2">See what's possible in just half an hour</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-green-600/20 p-4 rounded-xl">
+                            <p class="text-green-400 font-bold text-center">
+                                Then, That SAME VIDEO Got Him Hundreds MORE Views On His Instagram And YouTube Channels!
+                            </p>
+                        </div>
+                        
+                        <p class="text-xl text-gray-300 text-center mt-4 font-bold">
+                            You Can Do This With Just One Channel - Or ALL THREE...
+                        </p>
+                    </div>
+                    
+                    <div class="text-center mt-6">
+                        <button class="btn-primary px-8 py-4 rounded-xl font-bold text-lg">
+                            Sounds Amazing, I'm In!
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
+    <!-- The 3-Step System -->
+    <section class="sales-section bg-black/20">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-4xl md:text-5xl font-black mb-12">
+                <span class="gold-text">The Simple 3-Step Setup That Creates</span><br>
+                <span class="text-white">Your Own Automated Video Creation & Posting Bot,</span><br>
+                <span class="gold-text">Doing It All FOR YOU From Then On...</span>
+            </h2>
+            
+            <p class="text-2xl text-gray-300 mb-12">
+                So how does this all work?
+            </p>
+            
+            <p class="text-2xl text-gray-300 mb-12">
+                Simple. It's a 3-step process — built to be stupid-easy.
+            </p>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="feature-card p-8 rounded-2xl text-center">
+                    <div class="text-6xl mb-4">🧠</div>
+                    <h3 class="text-2xl font-black gold-text mb-4">Step 1: Choose your niche.</h3>
+                    <p class="text-gray-300">
+                        You pick the topic or theme you want your faceless channel to be about — from motivation, AI, crypto, gaming, news, luxury, conspiracy… literally hundreds of possibilities. And we show you which ones pay the most.
+                    </p>
+                </div>
+                
+                <div class="feature-card p-8 rounded-2xl text-center">
+                    <div class="text-6xl mb-4">🛠️</div>
+                    <h3 class="text-2xl font-black gold-text mb-4">Step 2: Use our custom-built mini tool.</h3>
+                    <p class="text-gray-300">
+                        This is where our magic happens. Our secret "tweaks" and "hacks" are secrets that we discovered while testing this system ourselves — and these "hacks" let you maximize reach, speed, and viral lift.
+                    </p>
+                </div>
+                
+                <div class="feature-card p-8 rounded-2xl text-center">
+                    <div class="text-6xl mb-4">🤖</div>
+                    <h3 class="text-2xl font-black gold-text mb-4">Step 3: Let the automation take over.</h3>
+                    <p class="text-gray-300">
+                        Next, you activate our AI tool that writes scripts, creates videos, adds thumbnails and descriptions AND auto-posts content to YouTube, TikTok and Instagram — 24/7, on schedule and ON AUTOPILOT!
+                    </p>
+                </div>
+            </div>
+            
+            <p class="text-2xl text-gray-300 mb-8">
+                That's it.
+            </p>
+            
+            <p class="text-2xl text-gray-300 mb-8">
+                You set it up in minutes.
+            </p>
+            
+            <p class="text-2xl text-gray-300 mb-8 font-bold">
+                And from that point forward? It runs without you.
+            </p>
+            
+            <div class="bg-gradient-to-r from-green-600/30 to-blue-600/30 p-6 rounded-2xl border-2 border-green-500 mb-8">
+                <p class="text-2xl font-bold text-white">
+                    💰 You can monetize with ad revenue… tap into multiple additional income streams… or even flip the channel to someone else for a lump-sum payday.
+                </p>
+            </div>
+            
+            <p class="text-xl text-gray-300 mb-8">
+                Whether you want passive income… asset building… or channel-flipping cash — this system makes it possible.
+            </p>
+            
+            <p class="text-xl text-gray-300 mb-8 font-bold">
+                And it's all done without showing your face or saying a word.
+            </p>
+            
+            <div class="text-center mt-8">
+                <button class="btn-primary px-8 py-4 rounded-xl font-bold text-lg">
+                    With Kairah Studio, You're Just One Click Away From Letting The System Take Over
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- What You Get -->
+    <section class="sales-section">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl md:text-5xl font-black text-center mb-12">
+                <span class="gold-text">If you're ready to start building your own faceless income machine…</span><br>
+                <span class="text-white">we've made it stupid-easy to get started.</span>
+            </h2>
+            
+            <p class="text-2xl text-gray-300 text-center mb-12">
+                Here's what you'll get:
+            </p>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="feature-card p-8 rounded-2xl text-center">
+                    <h3 class="text-2xl font-black gold-text mb-4">✅ Step-by-Step Video Training</h3>
+                    <p class="text-gray-300">
+                        We walk you through the entire strategy — from niche selection to automation — so you can set everything up in minutes, not months.
+                    </p>
+                </div>
+                
+                <div class="feature-card p-8 rounded-2xl text-center">
+                    <h3 class="text-2xl font-black gold-text mb-4">✅ Our Secret Automation Hacks</h3>
+                    <p class="text-gray-300">
+                        These aren't tips you'll find in a course or on YouTube. These are the real behind-the-scenes tweaks we use to 10X our results — and they're included inside.
+                    </p>
+                </div>
+                
+                <div class="feature-card p-8 rounded-2xl text-center">
+                    <h3 class="text-2xl font-black gold-text mb-4">✅ The High-Revenue Niche Action Guide</h3>
+                    <p class="text-gray-300">
+                        You'll get a breakdown of the top-paying faceless video niches (based on real-world CPMs and RPMs) so you can pick a topic you love — that also pays you well.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="max-w-4xl mx-auto text-center">
+                <p class="text-xl text-gray-300 mb-6">
+                    All of this? Could easily be priced at $97 or more.
+                </p>
+                
+                <p class="text-xl text-gray-300 mb-6">
+                    (And a coaching program on this would cost $5,000 / $10,000!)
+                </p>
+                
+                <p class="text-xl text-gray-300 mb-6">
+                    But today, you won't pay anywhere near that.
+                </p>
+                
+                <div class="bg-gradient-to-r from-purple-600/30 to-pink-600/30 p-6 rounded-2xl border-2 border-purple-500 mb-8">
+                    <p class="text-3xl font-black text-white">
+                        👉 Your total investment: just $17.
+                    </p>
+                </div>
+                
+                <div class="guarantee-badge">
+                    30-Day Money-Back Guarantee
+                </div>
+                
+                <p class="text-xl text-gray-300 mb-8">
+                    And you're completely protected by our 30-day, no-questions-asked money-back guarantee.
+                </p>
+                
+                <p class="text-xl text-gray-300 mb-8">
+                    If you don't love what you get… if you don't feel like this could launch your first (or next) automated income stream… just send us a message and we'll refund every penny.
+                </p>
+                
+                <p class="text-xl text-gray-300 mb-8">
+                    No hassle. No hard feelings.
+                </p>
+                
+                <p class="text-xl text-gray-300 mb-8 font-bold">
+                    This is set up for you to win — and we stand behind it 100%.
+                </p>
+            </div>
+            
+            <div class="text-center mt-8">
+                <button class="btn-primary px-8 py-4 rounded-xl font-bold text-lg">
+                    Yes, Show Me The System!
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Urgency Section -->
+    <section class="sales-section bg-black/20">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-4xl md:text-5xl font-black mb-12">
+                <span class="gold-text">The Sooner You Launch, The Sooner It Grows For You</span><br>
+                <span class="text-white">Automatically & With No Further Effort!</span>
+            </h2>
+            
+            <div class="max-w-4xl mx-auto">
+                <p class="text-xl text-gray-300 mb-6">
+                    You've seen what's possible.
+                </p>
+                
+                <p class="text-xl text-gray-300 mb-6">
+                    You've seen how regular people are launching faceless channels and earning $10K, $20K, even $50K per month — without ever showing their face, editing videos, or working around the clock.
+                </p>
+                
+                <p class="text-xl text-gray-300 mb-6">
+                    You've seen how we hacked the system — turning it into a 3-step automation that practically runs itself.
+                </p>
+                
+                <p class="text-xl text-gray-300 mb-6">
+                    You've seen the proof, the promise, and the process.
+                </p>
+                
+                <p class="text-xl text-gray-300 mb-6">
+                    And now you've got two choices:
+                </p>
+                
+                <div class="grid md:grid-cols-2 gap-8 mb-12">
+                    <div class="bg-red-600/20 p-6 rounded-2xl border-2 border-red-500">
+                        <h3 class="text-2xl font-black text-red-400 mb-4">🔹 Option 1: Do nothing.</h3>
+                        <p class="text-gray-300">
+                            Go back to scrolling. Let this moment pass — and keep wondering "what if?" six months from now when others are collecting passive income from the exact strategy you saw today.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-green-600/20 p-6 rounded-2xl border-2 border-green-500">
+                        <h3 class="text-2xl font-black text-green-400 mb-4">🔹 Option 2: Take a small, risk-free step forward.</h3>
+                        <p class="text-gray-300">
+                            Get instant access to the system. Set it up in minutes. And start building passive income machines that can pay you for years.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bg-yellow-600/20 p-6 rounded-2xl border-2 border-yellow-500 mb-8">
+                    <p class="text-2xl font-black text-yellow-400">
+                        The only real risk… is doing nothing.
+                    </p>
+                </div>
+                
+                <p class="text-xl text-gray-300 mb-6">
+                    Because the window is now. The momentum is now. The smart money is already moving in this direction.
+                </p>
+                
+                <p class="text-xl text-gray-300 mb-6">
+                    And thanks to this offer, you can move too — for just $17.
+                </p>
+                
+                <p class="text-xl text-gray-300 mb-6">
+                    So go ahead. Tap the button below.
+                </p>
+                
+                <p class="text-xl text-gray-300 mb-6">
+                    Lock in your access. Follow the steps. And let this system go to work for you.
+                </p>
+                
+                <p class="text-xl text-gray-300 mb-6">
+                    You've got 30 days to try it. Nothing to lose.
+                </p>
+                
+                <p class="text-xl text-gray-300 mb-8 font-bold">
+                    And everything to gain.
+                </p>
+            </div>
+            
+            <div class="text-center mt-8">
+                <button class="btn-primary px-8 py-4 rounded-xl font-bold text-lg">
+                    Yes, I'll try it risk-free for 30 days!
+                </button>
+            </div>
+            
+            <p class="text-xl text-gray-300 mt-8 font-bold">
+                You owe it to yourself and your family.<br>
+                Get Kairah Studio today...
+            </p>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="sales-section">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl md:text-5xl font-black text-center mb-12">
+                <span class="gold-text">Choose Your Kairah Studio Plan</span><br>
+                <span class="text-white">And Start Building Your Automated Empire</span>
+            </h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                <!-- Entry Plan -->
+                <div class="bg-[#3D2C41] p-6 rounded-2xl shadow-xl text-white text-center">
+                    <h2 class="text-2xl font-bold mb-2 text-[#D4AF37]">Entry Plan</h2>
+                    <p class="text-lg mb-4 font-semibold">$19 / month</p>
+                    <ul class="text-sm text-gray-300 list-disc list-inside mb-4 text-left space-y-2">
+                        <li>Generate up to 12 high-quality videos per month</li>
+                        <li>Access Starter Prompt Library for viral content</li>
+                        <li>Public & private video creation</li>
+                        <li>Commercial usage rights included</li>
+                        <li>Unlimited AI Chat Assistant support</li>
+                        <li>Cloud storage for 7 days</li>
+                        <li>Auto-renews monthly</li>
+                    </ul>
+                    <button class="bg-[#D4AF37] hover:bg-[#b8962d] text-[#3D2C41] font-bold py-2 px-6 rounded-xl shadow-md transition w-full">
+                        Get Started
+                    </button>
+                </div>
+
+                <!-- Pro Plan -->
+                <div class="bg-[#3D2C41] p-6 rounded-2xl shadow-xl text-white text-center border-2 border-purple-500 transform scale-105">
+                    <div class="bg-purple-600 text-white py-1 px-3 rounded-full text-sm font-bold inline-block mb-2">
+                        MOST POPULAR
+                    </div>
+                    <h2 class="text-2xl font-bold mb-2 text-[#D4AF37]">Pro Plan</h2>
+                    <p class="text-lg mb-4 font-semibold">$49 / month</p>
+                    <ul class="text-sm text-gray-300 list-disc list-inside mb-4 text-left space-y-2">
+                        <li>Generate up to 60 high-quality videos per month</li>
+                        <li>Full access to Viral Prompt Library</li>
+                        <li>Priority AI model access</li>
+                        <li>Enhanced rendering speed with fast queue</li>
+                        <li>Smart audio-sync & trending sound integration</li>
+                        <li>Public & private video creation</li>
+                        <li>Commercial usage rights</li>
+                        <li>Unlimited AI Chat Assistant</li>
+                        <li>Cloud storage for 14 days</li>
+                    </ul>
+                    <button class="bg-[#D4AF37] hover:bg-[#b8962d] text-[#3D2C41] font-bold py-2 px-6 rounded-xl shadow-md transition w-full">
+                        Get Started
+                    </button>
+                </div>
+
+                <!-- Diamond Plan -->
+                <div class="bg-[#3D2C41] p-6 rounded-2xl shadow-xl text-white text-center">
+                    <h2 class="text-2xl font-bold mb-2 text-[#D4AF37]">Diamond Plan</h2>
+                    <p class="text-lg mb-4 font-semibold">$449 — Full Access</p>
+                    <ul class="text-sm text-gray-300 list-disc list-inside mb-4 text-left space-y-2">
+                        <li>Unlimited monthly video generation</li>
+                        <li>Exclusive Diamond-only prompt & template library</li>
+                        <li>Priority rendering: your videos first</li>
+                        <li>Hyper-realistic cinematic engine</li>
+                        <li>Private projects mode</li>
+                        <li>Full commercial usage rights</li>
+                        <li>Unlimited AI Chat Assistant & dedicated support</li>
+                        <li>Early access to new features</li>
+                    </ul>
+                    <button class="bg-[#D4AF37] hover:bg-[#b8962d] text-[#3D2C41] font-bold py-2 px-6 rounded-xl shadow-md transition w-full">
+                        Get Started
+                    </button>
+                </div>
+
+                <!-- Lifetime Plan -->
+                <div class="bg-[#3D2C41] p-6 rounded-2xl shadow-xl text-white text-center border-2 border-yellow-500">
+                    <div class="bg-yellow-600 text-white py-1 px-3 rounded-full text-sm font-bold inline-block mb-2">
+                        BEST VALUE
+                    </div>
+                    <h2 class="text-2xl font-bold mb-2 text-[#D4AF37]">Lifetime Plan</h2>
+                    <p class="text-lg mb-4 font-semibold">$999 — Forever Access</p>
+                    <ul class="text-sm text-gray-300 list-disc list-inside mb-4 text-left space-y-2">
+                        <li>Unlimited video generation forever</li>
+                        <li>Lifetime access to all engines, templates & updates</li>
+                        <li>Private & public video creation</li>
+                        <li>Full commercial usage & resale rights</li>
+                        <li>Priority AI models & premium effects</li>
+                        <li>Unlimited AI Chat Assistant support</li>
+                        <li>Cloud storage forever</li>
+                        <li>Early access to all new features</li>
+                    </ul>
+                    <button class="bg-[#D4AF37] hover:bg-[#b8962d] text-[#3D2C41] font-bold py-2 px-6 rounded-xl shadow-md transition w-full">
+                        Get Started
+                    </button>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <div class="guarantee-badge">
+                    30-Day Money-Back Guarantee
+                </div>
+                <p class="text-gray-300 mt-4">
+                    All plans come with our 30-day money-back guarantee. If you're not satisfied, we'll refund your payment.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
     <section class="py-20 px-4 bg-gradient-to-br from-purple-900/40 to-pink-900/40">
         <div class="max-w-4xl mx-auto text-center">
             <h2 class="text-5xl md:text-7xl font-black mb-6">
@@ -725,23 +1131,12 @@
                 Join 10,000+ creators who are already generating millions with Kairah Studio
             </p>
             
-            <div class="bg-black/30 p-8 rounded-2xl border-2 border-yellow-400 max-w-2xl mx-auto mb-8">
-                <h3 class="text-2xl font-black gold-text mb-4">🚀 LIMITED TIME OFFER</h3>
-                <div class="text-4xl font-black text-white mb-2">$497 <span class="text-xl text-gray-400 line-through">$1997</span></div>
-                <p class="text-gray-300 mb-6">Lifetime Access - No Monthly Fees</p>
-                
-                <ul class="space-y-3 text-left max-w-md mx-auto">
-                    <li class="flex items-center"><span class="text-green-400 mr-3">✓</span> Unlimited Video Generation</li>
-                    <li class="flex items-center"><span class="text-green-400 mr-3">✓</span> All 47+ Content Types</li>
-                    <li class="flex items-center"><span class="text-green-400 mr-3">✓</span> Commercial License Included</li>
-                    <li class="flex items-center"><span class="text-green-400 mr-3">✓</span> Premium Support</li>
-                    <li class="flex items-center"><span class="text-green-400 mr-3">✓</span> Future Updates Included</li>
-                </ul>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 mb-8">
+                <button class="btn-primary px-8 py-4 rounded-xl font-bold text-lg">
+                    Start Your Free Trial Now
+                </button>
             </div>
             
-            <button class="btn-primary px-12 py-4 rounded-xl font-bold text-xl mb-4">
-                Start Your Free Trial Now
-            </button>
             <p class="text-gray-400">7-day free trial • No credit card required • Cancel anytime</p>
         </div>
     </section>
@@ -823,7 +1218,7 @@
             }, observerOptions);
             
             // Observe feature cards and stats
-            const elementsToAnimate = document.querySelectorAll('.feature-card, .stat-card');
+            const elementsToAnimate = document.querySelectorAll('.feature-card, .stat-card, .testimonial-card');
             elementsToAnimate.forEach(el => {
                 el.style.opacity = 0;
                 el.style.transform = 'translateY(20px)';
